@@ -92,6 +92,7 @@ body=f'''
 {t("p","Não defendo pessoas. Defendo o serviço e a honestidade jurídica. Não vou entrar em questões sobre minha vida pessoal: minha reivindicação é jurídica.","I am not defending individuals. I am defending service and legal integrity. I will not engage with questions about my personal life: my claim is a legal one.")}
 {t("p","Se a suspeição do juiz anulou uma condenação, por que não anularia outra? A regra tem de valer para todos.","If a judge's bias voided one conviction, why wouldn't it void another? The rule must apply to everyone.")}
 {t("p",'Fonte: <a href="https://noticias.stf.jus.br/postsnoticias/2a-turma-reconhece-parcialidade-de-ex-juiz-sergio-moro-na-condenacao-de-lula-no-caso-triplex/" target="_blank" rel="noopener">STF, HC 164.493</a>','Source: <a href="https://noticias.stf.jus.br/postsnoticias/2a-turma-reconhece-parcialidade-de-ex-juiz-sergio-moro-na-condenacao-de-lula-no-caso-triplex/" target="_blank" rel="noopener">STF, HC 164.493</a>',"note",True)}
+{t("p","Justiça não pode ser política, e política deve ser justa.","Justice cannot be political, and politics must be just.","lead")}
 {t("p","Pelos meios legais e sem violência. Não apoio nenhum ato ilegal nem agressão a ninguém. Não temo represálias; sigo pela via legal e pacífica.","Through legal means, without violence. I support no illegal act and no aggression against anyone. I do not fear reprisals; I stay on the lawful, peaceful path.")}
 {t("p","Uma presença pacífica em Brasília continua sendo uma opção.","A peaceful presence in Brasília remains an option.")}
 </section>
