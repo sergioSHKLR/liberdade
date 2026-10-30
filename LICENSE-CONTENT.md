@@ -92,3 +92,9 @@ The social icons in the footer are from [Simple Icons](https://simpleicons.org/)
 A imagem de fundo da abertura (`photos/justica-*.webp`) e a imagem de compartilhamento (`og.jpg`) derivam de [“A Justiça Alfredo Ceschiatti Brasília Brasil”](https://commons.wikimedia.org/wiki/File:A_Justica_Alfredo_Ceschiatti_Brasilia_Brasil.jpg), foto de Morio, Wikimedia Commons, licenciada sob [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Alterações: recorte, conversão para tons de azul-marinho, gradiente e, em `og.jpg`, texto sobreposto. Por exigência do compartilhamento pela mesma licença (share-alike), essas imagens derivadas são distribuídas sob CC BY-SA 3.0, e não sob a CC BY-NC-ND 4.0 do restante do conteúdo. Escultura de Alfredo Ceschiatti (1961), em frente ao STF, Brasília.
 
 The intro background (`photos/justica-*.webp`) and the share image (`og.jpg`) are derived from the photo above by Morio (Wikimedia Commons, CC BY-SA 3.0). Changes: crop, navy toning, gradient and, in `og.jpg`, overlaid text. Under the share-alike term, these derived images are licensed CC BY-SA 3.0, not under the CC BY-NC-ND 4.0 that covers the rest of the content.
+
+## Fonte / Font: Roboto Mono
+
+PT: O texto "200 / OU / 403?" e a legenda da introdução usam Roboto Mono (Google, Christian Robertson), auto-hospedada em `fonts/roboto-mono-700.woff2` (peso 700, subconjunto Latin). Licença: SIL Open Font License 1.1 — https://openfontlicense.org. É a mesma fonte dos vídeos e artes de divulgação, com o zero cortado.
+
+EN: The intro's "200 / OR / 403?" and legend use Roboto Mono (Google, Christian Robertson), self-hosted at `fonts/roboto-mono-700.woff2` (weight 700, Latin subset). License: SIL Open Font License 1.1 — https://openfontlicense.org. Same font as the promo videos and graphics, with a slashed zero.

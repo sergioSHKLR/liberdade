@@ -23,6 +23,7 @@ x=70;y=215
 for p,c,a in parts: dl.text((x,y),p,font=b,fill=c+(a,),anchor="lm"); x+=dl.textlength(p,font=b)
 a=L.getchannel("A"); sh=Image.new("RGBA",img.size,(2,8,20,0)); sh.putalpha(a.filter(ImageFilter.MaxFilter(9)).filter(ImageFilter.GaussianBlur(20)))
 img=Image.alpha_composite(Image.alpha_composite(img,sh),L)
+ImageDraw.Draw(img).text((72,300),"200 OK · 403 Forbidden",font=F(MONO,28,"Bold"),fill=(205,215,232),anchor="ls")
 d=ImageDraw.Draw(img)
 hf=F(OSW,62,"Bold")
 d.rectangle((70,330,70+130,336),fill=GOLD)

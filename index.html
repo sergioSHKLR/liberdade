@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://liberdade.shklr.org/">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:locale:alternate" content="en_US">
-<meta property="og:image" content="https://liberdade.shklr.org/og.jpg">
+<meta property="og:image" content="https://liberdade.shklr.org/og.jpg?v=2">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Liberdade — 200 ou 403?">
 <meta name="twitter:description" content="A regra tem de valer para todos.">
-<meta name="twitter:image" content="https://liberdade.shklr.org/og.jpg">
+<meta name="twitter:image" content="https://liberdade.shklr.org/og.jpg?v=2">
 <meta name="twitter:image:alt" content="200 ou 403? A regra tem de valer para todos. Estátua A Justiça, em Brasília.">
 <meta name="twitter:site" content="@sergioshklr">
 <meta name="twitter:creator" content="@sergioshklr">
@@ -29,9 +29,12 @@
 <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/fonts/roboto-mono-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="canonical" href="https://liberdade.shklr.org/">
 <script>if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))document.documentElement.classList.add('anim')</script>
 <style>
+@font-face{font-family:"Roboto Mono Site";src:url("/fonts/roboto-mono-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+:root{--mono:"Roboto Mono Site","Roboto Mono",ui-monospace,Menlo,Consolas,monospace}
 :root{--navy:#0b1f3a;--navy2:#12294b;--line:#29466f;--txt:#f5f7fb;--mut:#b7c3d7;--gold:#e3c26a;--ok:#5fd39a;--no:#ff8a7a}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--navy);color:var(--txt);font:18px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
@@ -49,7 +52,7 @@ a{color:var(--gold);text-underline-offset:3px}
 .lang button{min-width:56px;min-height:44px;background:none;color:var(--txt);border:0;font:inherit;font-size:.95rem;font-weight:600;cursor:pointer}
 .lang button[aria-pressed=true]{background:var(--txt);color:var(--navy)}
 .hero{text-align:center;padding:44px 0 40px}
-.badge{display:inline-flex;flex-direction:column;align-items:center;font-family:ui-monospace,"Roboto Mono",Menlo,Consolas,monospace;font-weight:800;line-height:.95;text-transform:uppercase;padding:22px 30px;border:2px solid var(--line);border-radius:22px;background:linear-gradient(180deg,var(--navy2),var(--navy))}
+.badge{display:inline-flex;flex-direction:column;align-items:center;font-family:var(--mono);font-weight:800;line-height:.95;text-transform:uppercase;padding:22px 30px;border:2px solid var(--line);border-radius:22px;background:linear-gradient(180deg,var(--navy2),var(--navy))}
 .badge .ok{color:var(--ok);font-size:clamp(4.5rem,30vw,8rem)}
 .badge .or{color:var(--mut);font-size:clamp(1.4rem,7vw,2.2rem);letter-spacing:.3em;margin:.25em 0 .2em .3em}
 .badge .no{color:var(--no);font-size:clamp(4.5rem,30vw,8rem)}
@@ -115,12 +118,17 @@ figcaption{font-size:.9rem;color:var(--mut);text-align:center;margin-top:6px}
 .intro .ibg img{width:100%;height:100%;object-fit:cover;object-position:58% 25%;display:block}
 .intro .pin::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,14,30,.35),rgba(5,14,30,.15) 40%,rgba(5,14,30,.75) 85%,#0b1f3a)}
 .intro .stage{position:relative;z-index:1;padding:64px 22px 40px}
-.intro .q3{margin:0;display:flex;flex-direction:column;align-items:center;font-family:ui-monospace,"Roboto Mono",Menlo,Consolas,monospace;font-weight:800;line-height:.95;text-transform:uppercase;text-shadow:0 2px 24px rgba(2,8,20,.85)}
+.intro .q3{margin:0;display:flex;flex-direction:column;align-items:center;font-family:var(--mono);font-weight:700;line-height:.95;text-transform:uppercase;text-shadow:0 2px 24px rgba(2,8,20,.85)}
 .intro .ok{color:var(--ok);font-size:clamp(4.5rem,28vw,9rem)}
 .intro .or{color:#cdd7e8;font-size:clamp(1.4rem,7vw,2.4rem);letter-spacing:.3em;margin:.3em 0 .25em .3em}
 .intro .no{color:var(--no);font-size:clamp(4.5rem,28vw,9rem)}
 .intro .q{color:#fff}
 .intro .rule{margin:1.2em auto 0;max-width:22ch;font-size:clamp(1.3rem,5.6vw,2rem);font-weight:800;line-height:1.2;color:#fff;text-shadow:0 2px 18px rgba(2,8,20,.9)}
+.intro .legend{margin:1.1em auto 0;max-width:34ch;font-family:var(--mono);font-weight:700;color:#cdd7e8;text-shadow:0 2px 14px rgba(2,8,20,.95)}
+.intro .legend p{margin:0}
+.intro .lg1{font-size:clamp(.8rem,3.3vw,1rem);line-height:1.35}
+.intro .lg2{margin-top:.5em!important;font-size:clamp(.72rem,3vw,.9rem);line-height:1.45;color:rgba(205,215,232,.85)}
+.intro .rule{margin-top:.9em!important}
 .intro .s{display:block}
 .anim .intro .s:not(.s1){opacity:0;transform:translate3d(0,22px,0);transition:opacity .6s ease,transform .6s ease}
 .anim .intro .s.on{opacity:1;transform:none}
@@ -145,7 +153,8 @@ footer{text-align:center;color:var(--mut);font-size:.9rem;padding:24px 22px 48px
 <div class="ibg" aria-hidden="true"><img src="photos/justica-1080.webp" srcset="photos/justica-640.webp 640w, photos/justica-1080.webp 1080w, photos/justica-1600.webp 1600w" sizes="100vw" width="1080" height="1440" alt="" decoding="async" fetchpriority="high"></div>
 <div class="stage">
 <p class="q3" id="intro-q"><span class="s s1 ok">200</span><span class="s s2 or" data-pt="OU" data-en="OR">OU</span><span class="s s3 no">403<span class="q">?</span></span></p>
-<p class="s s4 rule" data-pt="A regra tem de valer para todos." data-en="The rule must apply to everyone.">A regra tem de valer para todos.</p>
+<div class="s s4 legend"><p class="lg1" data-pt="200 OK: acesso permitido." data-en="200 OK: access granted.">200 OK: acesso permitido.</p><p class="lg1" data-pt="403 Forbidden: acesso negado." data-en="403 Forbidden: access denied.">403 Forbidden: acesso negado.</p><p class="lg2" data-pt="Na internet, são as respostas de um servidor. Aqui, a pergunta é se a regra vale ou não para todos." data-en="On the internet, these are a server’s replies. Here, the question is whether the rule applies to everyone or not.">Na internet, são as respostas de um servidor. Aqui, a pergunta é se a regra vale ou não para todos.</p></div>
+<p class="s s5 rule" data-pt="A regra tem de valer para todos." data-en="The rule must apply to everyone.">A regra tem de valer para todos.</p>
 </div>
 <p class="cue" aria-hidden="true"><span data-pt="Role para baixo" data-en="Scroll">Role para baixo</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></p>
 <p class="icredit"><span data-pt="Escultura “A Justiça”, de Alfredo Ceschiatti. Foto: Morio, CC BY-SA 3.0 (tonalizada)" data-en="Sculpture “A Justiça” by Alfredo Ceschiatti. Photo: Morio, CC BY-SA 3.0 (toned)">Escultura “A Justiça”, de Alfredo Ceschiatti. Foto: Morio, CC BY-SA 3.0 (tonalizada)</span> · <a href="https://commons.wikimedia.org/wiki/File:A_Justica_Alfredo_Ceschiatti_Brasilia_Brasil.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
@@ -260,12 +269,12 @@ b.forEach(function(x){x.addEventListener('click',function(){set(x.dataset.set)})
 document.querySelectorAll('.yt .ytb').forEach(function(btn){btn.addEventListener('click',function(){var d=btn.parentNode,f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+d.dataset.id+'?autoplay=1&start='+(parseInt(d.dataset.start,10)||0);f.title=btn.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.referrerPolicy='strict-origin-when-cross-origin';d.replaceChild(f,btn);f.focus()})});
 var I=document.querySelector('.intro');
 if(I&&document.documentElement.classList.contains('anim')){
-var G=I.querySelector('.ibg'),S=I.querySelectorAll('.s'),C=I.querySelector('.cue'),T=[0,.2,.4,.6],st=-1,ticking=false;
+var G=I.querySelector('.ibg'),S=I.querySelectorAll('.s'),C=I.querySelector('.cue'),T=[0,.15,.3,.47,.66],st=-1,ticking=false;
 function up(){ticking=false;var r=I.getBoundingClientRect(),tot=r.height-innerHeight,p=tot>0?Math.min(1,Math.max(0,-r.top/tot)):1;
 G.style.transform='translate3d(0,'+(-p*10).toFixed(2)+'%,0)';
 var n=0;for(var i=0;i<T.length;i++)if(p>=T[i])n=i;
 if(n!==st){st=n;S.forEach(function(e,i){e.classList.toggle('on',i<=n)})}
-C.classList.toggle('off',p>.55)}
+C.classList.toggle('off',p>.75)}
 function req(){if(!ticking){ticking=true;requestAnimationFrame(up)}}
 addEventListener('scroll',req,{passive:true});addEventListener('resize',req,{passive:true});up()}
 var s=null;try{s=localStorage.getItem('lang')}catch(e){}
