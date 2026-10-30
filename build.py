@@ -79,7 +79,9 @@ body=f'''
 {t("li","Devido processo legal, com amplo direito de defesa e juízes imparciais.","Due process, with the full right to a defense and impartial judges.")}
 {t("li","Fiscalização institucional: freios e contrapesos que valham para todos os Poderes.","Institutional oversight: checks and balances that apply to every branch.")}
 </ul>
-{t("p","Não vou entrar em questões sobre minha vida pessoal. Minha reivindicação é jurídica.","I will not engage with questions about my personal life. My claim is a legal one.")}
+{t("p","Não defendo pessoas. Defendo o serviço e a honestidade jurídica. Não vou entrar em questões sobre minha vida pessoal: minha reivindicação é jurídica.","I am not defending individuals. I am defending service and legal integrity. I will not engage with questions about my personal life: my claim is a legal one.")}
+{t("p","Se a suspeição do juiz anulou uma condenação, por que não anularia outra? A regra tem de valer para todos.","If a judge's bias voided one conviction, why wouldn't it void another? The rule must apply to everyone.")}
+{t("p",'Fonte: <a href="https://noticias.stf.jus.br/postsnoticias/2a-turma-reconhece-parcialidade-de-ex-juiz-sergio-moro-na-condenacao-de-lula-no-caso-triplex/" target="_blank" rel="noopener">STF, HC 164.493</a>','Source: <a href="https://noticias.stf.jus.br/postsnoticias/2a-turma-reconhece-parcialidade-de-ex-juiz-sergio-moro-na-condenacao-de-lula-no-caso-triplex/" target="_blank" rel="noopener">STF, HC 164.493</a>',"note",True)}
 {t("p","Tudo isso pelos meios legais e sem violência. Não apoio nenhum ato ilegal nem agressão a quem quer que seja.","All of this through legal means and without violence. I support no illegal act and no aggression against anyone.")}
 {t("p","Não temo represálias nem confinamento. Seguirei pela via legal e pacífica.","I do not fear reprisals or confinement. I will stay on the lawful, peaceful path.")}
 {t("p","Não tenho recursos para ir a Brasília por conta própria, mas uma presença pacífica lá continua sendo uma opção, se houver apoio.","I don't have the means to go to Brasília on my own, but a peaceful presence there remains an option if support comes.")}
