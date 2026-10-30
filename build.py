@@ -76,7 +76,6 @@ body=f'''
 {t("p",'Não reconheço como imparcial nem legítimo o julgamento conduzido por quem tem interesse no resultado. Peço a anulação, pelo mesmo critério que anulou as condenações do atual presidente: juiz parcial não julga.',"I do not recognize as impartial or legitimate a trial conducted by those with a stake in its outcome. I ask for annulment, by the same standard that annulled the current president's convictions: a biased judge cannot judge.","lead")}
 <ul class="list">
 {t("li","Devido processo legal, com amplo direito de defesa e juízes imparciais.","Due process, with the full right to a defense and impartial judges.")}
-{t("li","Proporcionalidade: prisão domiciliar para maiores de 70 anos com problemas de saúde, como a lei já prevê.","Proportionality: house arrest for people over 70 with health problems, as the law already provides.")}
 {t("li","Fiscalização institucional: freios e contrapesos que valham para todos os Poderes.","Institutional oversight: checks and balances that apply to every branch.")}
 </ul>
 {t("p","Tudo isso pelos meios legais e sem violência. Não apoio nenhum ato ilegal nem agressão a quem quer que seja.","All of this through legal means and without violence. I support no illegal act and no aggression against anyone.")}
