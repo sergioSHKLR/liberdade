@@ -119,7 +119,7 @@ body=f'''
 {t("p","Kit de imprensa: em breve.","Press kit: coming soon.","note")}
 </section>
 </main>
-<footer>{t("p","Campanha independente e virtual. Sem partido, sem financiamento.","Independent, virtual campaign. No party, no funding.")}<p class="lic"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener">{t("span","© 2026 Sergio Schickler · Textos e fotos: CC BY-NC-ND 4.0","© 2026 Sergio Schickler · Text and photos: CC BY-NC-ND 4.0")}</a></p>{t("p","Uso indevido de imagem ou texto, incluindo montagens e alterações, está sujeito às medidas previstas na Lei 9.610/98 (direitos autorais) e no art. 20 do Código Civil (direito de imagem).","Misuse of images or text, including edits or alterations, may be subject to legal action under copyright and image-rights law.","lic")}</footer>
+<footer>{t("p","Campanha independente e virtual. Sem partido, sem financiamento.","Independent, virtual campaign. No party, no funding.")}<p class="lic"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener">{t("span","© 2026 Sergio Schickler · Textos e fotos (exceto onde indicado): CC BY-NC-ND 4.0","© 2026 Sergio Schickler · Text and photos (unless otherwise noted): CC BY-NC-ND 4.0")}</a></p>{t("p","Uso indevido de imagem ou texto, incluindo montagens e alterações, está sujeito às medidas previstas na Lei 9.610/98 (direitos autorais) e no art. 20 do Código Civil (direito de imagem).","Misuse of images or text, including edits or alterations, may be subject to legal action under copyright and image-rights law.","lic")}</footer>
 '''
 tpl=open('template.html').read()
 open('index.html','w').write(tpl.replace('<!--BODY-->',body))
