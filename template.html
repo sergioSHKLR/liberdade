@@ -13,7 +13,8 @@ body{margin:0;background:var(--navy);color:var(--txt);font:18px/1.65 system-ui,-
 a{color:var(--gold);text-underline-offset:3px}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .wrap{max-width:640px;margin:0 auto;padding:0 22px}
-.top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:rgba(11,31,58,.94);border-bottom:1px solid var(--line)}
+.top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:var(--gold);color:var(--navy);border-bottom:1px solid #b8963f}
+.top .lang{border-color:var(--navy)}.top .lang button{color:var(--navy)}.top .lang button[aria-pressed=true]{background:var(--navy);color:var(--gold)}.top .brand .ic{stroke:var(--navy)}
 .brand{display:flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem}
 .lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
 .lang button{min-width:56px;min-height:44px;background:none;color:var(--txt);border:0;font:inherit;font-size:.95rem;font-weight:600;cursor:pointer}
