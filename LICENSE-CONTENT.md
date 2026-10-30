@@ -12,6 +12,8 @@ The texts, photos and graphics on this page are licensed under
 
 - Vídeos do YouTube incorporados e suas miniaturas (`photos/video-*.webp`) pertencem aos respectivos titulares (Correio Braziliense, Estadão/TV Globo) e não estão cobertos por esta licença.
   Embedded YouTube videos and their thumbnails (`photos/video-*.webp`) belong to their respective owners (Correio Braziliense, Estadão/TV Globo) and are not covered by this license.
+- Foto de 2019 (`photos/cpo-2019.webp`): tirada por um amigo, do arquivo pessoal de Sergio Schickler, usada com permissão e excluída da licença CC.
+  2019 photo (`photos/cpo-2019.webp`): taken by a friend, from Sergio Schickler's personal archive, used with permission and excluded from the CC license.
 - Versículos bíblicos: Almeida Revista e Corrigida (ARC) e King James Version (KJV), conforme indicado.
   Bible verses: Almeida Revista e Corrigida (ARC) and King James Version (KJV), as listed.
 
