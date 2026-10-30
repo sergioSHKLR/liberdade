@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1f3a">
+<meta name="robots" content="noindex">
+<title>Liberdade</title>
+<meta name="description" content="Liberdade, respeito e apreço por quem serve e protege.">
+<style>
+:root{--navy:#0b1f3a;--navy2:#12294b;--line:#29466f;--txt:#f5f7fb;--mut:#b7c3d7;--gold:#e3c26a;--ok:#5fd39a;--no:#ff8a7a}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--navy);color:var(--txt);font:18px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--gold);text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:640px;margin:0 auto;padding:0 22px}
+.top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:rgba(11,31,58,.94);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{min-width:56px;min-height:44px;background:none;color:var(--txt);border:0;font:inherit;font-size:.95rem;font-weight:600;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--txt);color:var(--navy)}
+.hero{text-align:center;padding:44px 0 40px}
+.badge{display:inline-flex;flex-direction:column;align-items:center;font-family:ui-monospace,"Roboto Mono",Menlo,Consolas,monospace;font-weight:800;line-height:.95;text-transform:uppercase;padding:22px 30px;border:2px solid var(--line);border-radius:22px;background:linear-gradient(180deg,var(--navy2),var(--navy))}
+.badge .ok{color:var(--ok);font-size:clamp(4.5rem,30vw,8rem)}
+.badge .or{color:var(--mut);font-size:clamp(1.4rem,7vw,2.2rem);letter-spacing:.3em;margin:.25em 0 .2em .3em}
+.badge .no{color:var(--no);font-size:clamp(4.5rem,30vw,8rem)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.status{color:var(--mut);font-size:1.1rem;margin:.9em 0 0}
+.div{display:block;width:160px;margin:26px auto 6px;fill:none;stroke:var(--gold);stroke-width:1.5}
+.div path:last-child{fill:var(--gold);stroke:none}
+h1{font-size:clamp(2.3rem,11vw,3.2rem);margin:.15em 0 .3em;letter-spacing:.03em}
+.obj{font-size:1.2rem;font-weight:600;margin:0 auto}
+.sub{color:var(--mut);margin:.8em 0 0}
+section{padding:36px 0;border-top:1px solid var(--line)}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.sh h2{font-size:1.4rem;line-height:1.25;margin:0}
+.ic{flex:none;width:28px;height:28px;fill:none;stroke:var(--gold);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.brand .ic{width:20px;height:20px}
+.lead{font-size:1.15rem;font-weight:600}
+.laurel{display:block;width:120px;margin:0 auto 8px;fill:none;stroke:var(--gold);stroke-width:1.5}
+.laurel .lf,.laurel .st{fill:var(--gold);stroke:none;opacity:.85}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0 6px;align-items:start}
+figure{margin:0}
+figure img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 15%;border-radius:12px;border:1px solid var(--line);background:var(--navy2)}
+figcaption{font-size:.9rem;color:var(--mut);text-align:center;margin-top:6px}
+.arrow{text-align:center;font-family:ui-monospace,Menlo,monospace;color:var(--gold);letter-spacing:.15em;margin:4px 0 0}
+.tl{display:block;width:100%;height:auto;margin:18px 0}
+.tl .ln{stroke:var(--line);stroke-width:3}
+.tl .pt circle{fill:var(--navy);stroke:var(--gold);stroke-width:3}
+.tl text{text-anchor:middle;font-family:system-ui,sans-serif}
+.tl .yr text{fill:var(--txt);font-weight:700;font-size:15px}
+.tl .lb text{fill:var(--mut);font-size:13px}
+.quote{border-left:4px solid var(--gold);padding:.2em 0 .2em 1em;font-style:italic;font-size:1.1rem}
+.list{padding-left:1.2em}.list li{margin:.5em 0}
+.ask{text-align:center;font-size:1.35rem;font-weight:700;color:var(--gold);margin-top:1.2em}
+.note{color:var(--mut);font-size:.95rem}
+.grid{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.grid li{background:var(--navy2);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:16px 18px;font-weight:650;font-size:1.08rem}
+.grid small{display:block;font-weight:400;color:var(--mut);font-size:.82rem;margin-top:6px}
+@media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+footer{text-align:center;color:var(--mut);font-size:.9rem;padding:24px 22px 48px;border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<!--BODY-->
+<script>
+(function(){
+var b=document.querySelectorAll('[data-set]');
+function set(l){
+document.documentElement.lang=l==='en'?'en':'pt-BR';
+document.querySelectorAll('[data-pt]').forEach(function(e){var t=e.getAttribute('data-'+l);if(e.hasAttribute('data-html'))e.innerHTML=t;else e.textContent=t});
+document.querySelectorAll('[data-alt-pt]').forEach(function(e){e.alt=e.getAttribute('data-alt-'+l)});
+document.title=l==='en'?'Freedom':'Liberdade';
+b.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.set===l)});
+try{localStorage.setItem('lang',l)}catch(e){}}
+b.forEach(function(x){x.addEventListener('click',function(){set(x.dataset.set)})});
+var s=null;try{s=localStorage.getItem('lang')}catch(e){}
+if(s==='en'||(!s&&location.hash==='#en'))set('en');
+})();
+</script>
+</body>
+</html>
