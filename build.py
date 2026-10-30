@@ -61,7 +61,7 @@ body=f'''
 
 <section>
 {h2("person","Quem sou","Who I am")}
-{t("p","Sergio Schickler, Chief Petty Officer (ETC) aposentado da Marinha dos EUA. Técnico de comunicações, com mais de 7 anos em apoio à Guerra Especial Naval, incluindo missões no Iraque e no Afeganistão. Não fui operador; fui quem mantinha a comunicação funcionando. Brasileiro e americano.","Sergio Schickler, retired U.S. Navy Chief Petty Officer (ETC). Communications technician, with 7+ years supporting Naval Special Warfare, including deployments to Iraq and Afghanistan. I was not an operator; I kept the communications running. Brazilian and American.")}
+{t("p","Sergio Schickler, Chief Petty Officer (ETC) aposentado da Marinha dos EUA. Técnico de comunicações, com mais de 7 anos em apoio à Guerra Especial Naval, incluindo missões no Iraque e no Afeganistão. Não fui operador; fui quem mantinha a comunicação funcionando. Cidadão brasileiro e americano.","Sergio Schickler, retired U.S. Navy Chief Petty Officer (ETC). Communications technician, with 7+ years supporting Naval Special Warfare, including deployments to Iraq and Afghanistan. I was not an operator; I kept the communications running. Brazilian and U.S. citizen.")}
 {TL}
 {t("p","Servi sob quatro presidentes, de dois partidos. Jurei lealdade à Constituição, não a um governante.","I served under four presidents, from two parties. I swore loyalty to the Constitution, not to a ruler.","quote")}
 <div class="pair">
