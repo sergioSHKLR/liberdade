@@ -68,9 +68,10 @@ body=f'''
 {t("p",'Histórico verificável, com o DD-214: <a href="https://shadowbox.shklr.org">shadowbox.shklr.org</a>','Verifiable record, including the DD-214: <a href="https://shadowbox.shklr.org">shadowbox.shklr.org</a>',"note",True)}
 </section>
 
-<section>
+<section id="peco">
 {h2("scale","O que peço","What I ask")}
 {t("p",OBJ_PT,OBJ_EN,"lead")}
+{t("p",'Não reconheço como imparcial nem legítimo o julgamento conduzido por quem tem interesse no resultado. Peço a anulação, pelo mesmo critério que anulou as condenações do atual presidente: juiz parcial não julga.',"I do not recognize as impartial or legitimate a trial conducted by those with a stake in its outcome. I ask for annulment, by the same standard that annulled the current president's convictions: a biased judge cannot judge.","lead")}
 <ul class="list">
 {t("li","Devido processo legal, com amplo direito de defesa e juízes imparciais.","Due process, with the full right to a defense and impartial judges.")}
 {t("li","Proporcionalidade: prisão domiciliar para maiores de 70 anos com problemas de saúde, como a lei já prevê.","Proportionality: house arrest for people over 70 with health problems, as the law already provides.")}
