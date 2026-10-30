@@ -65,7 +65,7 @@ body=f'''
 {TL}
 {t("p","Servi sob quatro presidentes, de dois partidos. Jurei lealdade à Constituição, não a um governante.","I served under four presidents, from two parties. I swore loyalty to the Constitution, not to a ruler.","quote")}
 <div class="pair">
-{fig("headset-2008.webp",900,674,"2008, comunicações","2008, communications","No rádio, de capacete e headset, 2008","On the radio in helmet and headset, 2008")}
+{fig("headset-2008.webp",900,674,"2009, treinamento de comboio (simulação), Fort Bliss","2009, convoy training (simulation), Fort Bliss","No rádio, de capacete e headset, em simulação de treinamento de comboio em Fort Bliss, 2009","On the radio in helmet and headset during a convoy training simulation at Fort Bliss, 2009")}
 {fig("cpo-2019.webp",900,601,"2019, cerimônia de aposentadoria de um amigo","2019, a friend's retirement ceremony","De uniforme de gala diante das bandeiras, na cerimônia de aposentadoria de um amigo, 2019","In dress uniform before the flags at a friend's retirement ceremony, 2019")}
 </div>
 {t("p",'Histórico verificável, com o DD-214: <a href="https://shadowbox.shklr.org">shadowbox.shklr.org</a>','Verifiable record, including the DD-214: <a href="https://shadowbox.shklr.org">shadowbox.shklr.org</a>',"note",True)}
