@@ -25,6 +25,7 @@ slog=[('Logs não mentem.',"Logs don't lie."),('Rollback da consciência não ex
 grid=''.join(f'<li>{t("span",p,e)}</li>' for p,e in slog)
 grid+='<li>'+t('span','Justiça que tarda é ilegal.','Justice delayed is unlawful.')+t('small','CF, art. 5º, LXXVIII — razoável duração do processo','Brazilian Constitution, art. 5, LXXVIII — right to a reasonable duration of proceedings')+'</li>'
 TL='''<svg class="tl" viewBox="0 0 340 110" role="img" aria-label="1997–2018"><path class="ln" d="M45 55H295"/><g class="pt"><circle cx="45" cy="55" r="7"/><circle cx="170" cy="55" r="7"/><circle cx="295" cy="55" r="7"/></g><g class="yr"><text x="45" y="33">1997</text><text x="170" y="33">2008–12</text><text x="295" y="33">2018</text></g><g class="lb"><text x="45" y="85" data-pt="Recruta" data-en="Recruit">Recruta</text><text x="170" y="85" data-pt="Missões" data-en="Deployments">Missões</text><text x="295" y="85" data-pt="Reserva" data-en="Retired">Reserva</text></g></svg>'''
+HAND='<svg class="hand" viewBox="0 0 120 60" role="img" aria-label="Aperto de mãos" data-label-pt="Aperto de mãos" data-label-en="Handshake"><path d="M4 22h18l10-6h14l8 5"/><path d="M116 22H98l-12-6H70l-16 10c-3 2-1 6 3 5l12-5"/><path d="M22 22l8 18c2 3 5 4 8 3l20 0c3 0 5-2 4-5"/><path d="M98 22l-6 16c-1 3-4 4-7 3"/><path d="M85 41l-4 4c-2 2-5 2-7 0M74 45l-3 3c-2 2-5 2-7 0M64 48l-2 2c-2 2-5 2-7 0l-4-4"/><path d="M4 22v20h18M116 22v20H98"/></svg>'
 LAUREL='''<svg class="laurel" viewBox="0 0 120 60" aria-hidden="true"><path d="M60 55C35 50 20 35 18 10M60 55C85 50 100 35 102 10"/><g class="lf"><ellipse cx="24" cy="18" rx="3" ry="7" transform="rotate(-30 24 18)"/><ellipse cx="30" cy="31" rx="3" ry="7" transform="rotate(-50 30 31)"/><ellipse cx="42" cy="43" rx="3" ry="7" transform="rotate(-70 42 43)"/><ellipse cx="96" cy="18" rx="3" ry="7" transform="rotate(30 96 18)"/><ellipse cx="90" cy="31" rx="3" ry="7" transform="rotate(50 90 31)"/><ellipse cx="78" cy="43" rx="3" ry="7" transform="rotate(70 78 43)"/></g><path d="M60 14l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z" class="st"/></svg>'''
 body=f'''
 <header class="top"><span class="brand">{ic("anchor")}Liberdade</span>
@@ -42,7 +43,7 @@ body=f'''
 
 <section id="respeito">
 {h2("heart","Respeito a quem serve","Respect for those who serve")}
-{LAUREL}
+{HAND}
 {t("p","Nos Estados Unidos, fui — e ainda sou — agradecido pelo meu serviço. Por estranhos, na rua, quase todos os dias.","In the United States, I was, and still am, thanked for my service. By strangers, on the street, almost every day.")}
 {t("p","Aqui, vejo quem protege o país — militares, policiais, bombeiros — sem esse reconhecimento. E alguns deles, presos. Isso é terrível.","Here, I see those who protect the country — service members, police officers, firefighters — without that recognition. And some of them in prison. That is terrible.")}
 {t("p","Não sou paraquedista, mas servi ao lado deles. Sei que ninguém salta de um avião, arriscando a própria vida, pelo adicional de periculosidade. Salta pelo país.","I'm not a paratrooper, but I served alongside them. I know no one jumps out of an aircraft, risking their life, for hazard pay. They jump for their country.")}
