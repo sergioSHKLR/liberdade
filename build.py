@@ -26,7 +26,7 @@ OBJ_EN='Freedom for Bolsonaro and for the service members and civilians unjustly
 slog=[('Logs não mentem.',"Logs don't lie."),('Rollback da consciência não existe.','There is no rollback for a conscience.'),('Sem ordem por escrito, sem deploy.','No written order, no deploy.'),('Não repúdio.','Non-repudiation.'),('Integridade é o melhor firewall.','Integrity is the best firewall.'),('Problema de usuário ou de sistema?','User problem or system problem?'),('Daqui a quatro anos, onde estará sua consciência?','Four years from now, where will your conscience be?'),('O silêncio também é uma escolha.','Silence is also a choice.'),('Meu juramento foi à Constituição. O seu também.','My oath was to the Constitution. So was yours.'),('Justiça sem devido processo não é justiça.','Justice without due process is not justice.')]
 grid=''.join(f'<li>{t("span",p,e)}</li>' for p,e in slog)
 grid+='<li>'+t('span','Justiça que tarda é ilegal.','Justice delayed is unlawful.')+t('small','CF, art. 5º, LXXVIII — razoável duração do processo','Brazilian Constitution, art. 5, LXXVIII — right to a reasonable duration of proceedings')+'</li>'
-TL='''<svg class="tl" viewBox="0 0 340 110" role="img" aria-label="1997–2018"><path class="ln" d="M45 55H295"/><g class="pt"><circle cx="45" cy="55" r="7"/><circle cx="170" cy="55" r="7"/><circle cx="295" cy="55" r="7"/></g><g class="yr"><text x="45" y="33">1997</text><text x="170" y="33">2008–12</text><text x="295" y="33">2018</text></g><g class="lb"><text x="45" y="85" data-pt="Recruta" data-en="Recruit">Recruta</text><text x="170" y="85" data-pt="Missões" data-en="Deployments">Missões</text><text x="295" y="85" data-pt="Reserva" data-en="Retired">Reserva</text></g></svg>'''
+TL='''<svg class="tl" viewBox="-20 0 380 110" role="img" aria-label="1997–2018"><path class="ln" d="M45 55H295"/><g class="pt"><circle cx="45" cy="55" r="7"/><circle cx="170" cy="55" r="7"/><circle cx="295" cy="55" r="7"/></g><g class="yr"><text x="45" y="33">1997</text><text x="170" y="33">2006–13</text><text x="295" y="33">2018</text></g><g class="lb"><text x="45" y="85" data-pt="Recruta" data-en="Recruit">Recruta</text><text x="170" y="85" data-pt="Iraque · Afeganistão" data-en="Iraq · Afghanistan">Iraque · Afeganistão</text><text x="295" y="85" data-pt="Aposentadoria" data-en="Retirement">Aposentadoria</text></g></svg>'''
 LAUREL='''<svg class="laurel" viewBox="0 0 120 60" aria-hidden="true"><path d="M60 55C35 50 20 35 18 10M60 55C85 50 100 35 102 10"/><g class="lf"><ellipse cx="24" cy="18" rx="3" ry="7" transform="rotate(-30 24 18)"/><ellipse cx="30" cy="31" rx="3" ry="7" transform="rotate(-50 30 31)"/><ellipse cx="42" cy="43" rx="3" ry="7" transform="rotate(-70 42 43)"/><ellipse cx="96" cy="18" rx="3" ry="7" transform="rotate(30 96 18)"/><ellipse cx="90" cy="31" rx="3" ry="7" transform="rotate(50 90 31)"/><ellipse cx="78" cy="43" rx="3" ry="7" transform="rotate(70 78 43)"/></g><path d="M60 14l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z" class="st"/></svg>'''
 body=f'''
 <header class="top"><span class="brand">{ic("anchor")}Liberdade</span>
@@ -61,7 +61,7 @@ body=f'''
 
 <section>
 {h2("person","Quem sou","Who I am")}
-{t("p","Sergio Schickler, Chief Petty Officer (ETC) da Marinha dos EUA, na reserva. Fui técnico de comunicações em apoio à guerra especial naval, no Iraque e no Afeganistão. Brasileiro e americano.","Sergio Schickler, retired U.S. Navy Chief Petty Officer (ETC). I was a communications technician supporting naval special warfare, in Iraq and Afghanistan. Brazilian and American.")}
+{t("p","Sergio Schickler, Chief Petty Officer (ETC) aposentado da Marinha dos EUA. Técnico de comunicações, com mais de 7 anos em apoio à Guerra Especial Naval, incluindo missões no Iraque e no Afeganistão. Não fui operador; fui quem mantinha a comunicação funcionando. Brasileiro e americano.","Sergio Schickler, retired U.S. Navy Chief Petty Officer (ETC). Communications technician, with 7+ years supporting Naval Special Warfare, including deployments to Iraq and Afghanistan. I was not an operator; I kept the communications running. Brazilian and American.")}
 {TL}
 {t("p","Servi sob quatro presidentes, de dois partidos. Jurei lealdade à Constituição, não a um governante.","I served under four presidents, from two parties. I swore loyalty to the Constitution, not to a ruler.","quote")}
 <div class="pair">
@@ -80,6 +80,8 @@ body=f'''
 {t("li","Fiscalização institucional: freios e contrapesos que valham para todos os Poderes.","Institutional oversight: checks and balances that apply to every branch.")}
 </ul>
 {t("p","Tudo isso pelos meios legais e sem violência. Não apoio nenhum ato ilegal nem agressão a quem quer que seja.","All of this through legal means and without violence. I support no illegal act and no aggression against anyone.")}
+{t("p","Não temo represálias nem confinamento. Seguirei pela via legal e pacífica.","I do not fear reprisals or confinement. I will stay on the lawful, peaceful path.")}
+{t("p","Não tenho recursos para ir a Brasília por conta própria, mas uma presença pacífica lá continua sendo uma opção, se houver apoio.","I don't have the means to go to Brasília on my own, but a peaceful presence there remains an option if support comes.")}
 {t("p","Quem fiscaliza quem julga?","Who oversees those who judge?","ask")}
 </section>
 
@@ -97,7 +99,7 @@ body=f'''
 
 <section>
 {h2("shield","Declaração","Statement")}
-{t("p","Sem partido. Sem cargo. Sem dinheiro. Sem interesse pessoal.","No party. No office. No money. No personal interest.","lead")}
+{t("p","Sem partido. Sem cargo. Sem interesse pessoal.","No party. No office. No personal interest.","lead")}
 </section>
 
 <section>
@@ -120,7 +122,7 @@ body=f'''
 {t("p","Kit de imprensa: em breve.","Press kit: coming soon.","note")}
 </section>
 </main>
-<footer>{t("p","Campanha independente e virtual. Sem partido, sem financiamento.","Independent, virtual campaign. No party, no funding.")}{t("p","As fotos de uniforme são do período de serviço ativo (1997–2018), exceto a de 2025, tirada já na reserva, no Memorial Day, ocasião em que o uso é permitido a aposentados. Esta página expressa apenas opiniões pessoais e não representa nem tem endosso da Marinha dos EUA, do Departamento de Guerra ou do governo dos EUA.","Photos in uniform are from my active service (1997–2018), except the 2025 photo, taken as a retiree on Memorial Day, when retirees are permitted to wear it. This page reflects personal views only and is not endorsed by the U.S. Navy, the Department of War, or the U.S. Government.","lic")}<p class="lic"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener">{t("span","© 2026 Sergio Schickler · Textos e fotos (exceto onde indicado): CC BY-NC-ND 4.0","© 2026 Sergio Schickler · Text and photos (unless otherwise noted): CC BY-NC-ND 4.0")}</a></p>{t("p","Uso indevido de imagem ou texto, incluindo montagens e alterações, está sujeito às medidas previstas na Lei 9.610/98 (direitos autorais) e no art. 20 do Código Civil (direito de imagem).","Misuse of images or text, including edits or alterations, may be subject to legal action under copyright and image-rights law.","lic")}</footer>
+<footer>{t("p","Campanha independente e virtual. Sem partido, sem financiamento.","Independent, virtual campaign. No party, no funding.")}{t("p","As fotos de uniforme são do período de serviço ativo (1997–2018), exceto a de 2025, tirada já aposentado, no Memorial Day, ocasião em que o uso é permitido a aposentados. Esta página expressa apenas opiniões pessoais e não representa nem tem endosso da Marinha dos EUA, do Departamento de Guerra ou do governo dos EUA.","Photos in uniform are from my active service (1997–2018), except the 2025 photo, taken as a retiree on Memorial Day, when retirees are permitted to wear it. This page reflects personal views only and is not endorsed by the U.S. Navy, the Department of War, or the U.S. Government.","lic")}<p class="lic"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener">{t("span","© 2026 Sergio Schickler · Textos e fotos (exceto onde indicado): CC BY-NC-ND 4.0","© 2026 Sergio Schickler · Text and photos (unless otherwise noted): CC BY-NC-ND 4.0")}</a></p>{t("p","Uso indevido de imagem ou texto, incluindo montagens e alterações, está sujeito às medidas previstas na Lei 9.610/98 (direitos autorais) e no art. 20 do Código Civil (direito de imagem).","Misuse of images or text, including edits or alterations, may be subject to legal action under copyright and image-rights law.","lic")}</footer>
 '''
 tpl=open('template.html').read()
 open('index.html','w').write(tpl.replace('<!--BODY-->',body))

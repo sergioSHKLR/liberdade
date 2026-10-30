@@ -21,7 +21,7 @@ Página única, estática e bilíngue (PT padrão, EN via botão) da campanha vi
 Página desenvolvida com auxílio de IA (Grok). / Page built with AI assistance (Grok).
 
 ## Aviso / Disclaimer
-As fotos de uniforme são do período de serviço ativo (1997–2018), exceto a de 2025, tirada já na reserva, no Memorial Day, ocasião em que o uso é permitido a aposentados. Esta página expressa apenas opiniões pessoais e não representa nem tem endosso da Marinha dos EUA, do Departamento de Guerra ou do governo dos EUA.
+As fotos de uniforme são do período de serviço ativo (1997–2018), exceto a de 2025, tirada já aposentado, no Memorial Day, ocasião em que o uso é permitido a aposentados. Esta página expressa apenas opiniões pessoais e não representa nem tem endosso da Marinha dos EUA, do Departamento de Guerra ou do governo dos EUA.
 
 Photos in uniform are from my active service (1997–2018), except the 2025 photo, taken as a retiree on Memorial Day, when retirees are permitted to wear it. This page reflects personal views only and is not endorsed by the U.S. Navy, the Department of War, or the U.S. Government.
 
