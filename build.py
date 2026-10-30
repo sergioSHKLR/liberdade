@@ -35,7 +35,7 @@ body=f'''
 <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set="pt" aria-pressed="true">PT</button><button type="button" data-set="en" aria-pressed="false">EN</button></div></header>
 <section class="intro" aria-labelledby="intro-q">
 <div class="pin">
-<div class="ibg" aria-hidden="true"><img src="photos/justica-1080.webp" srcset="photos/justica-640.webp 640w, photos/justica-1080.webp 1080w, photos/justica-1600.webp 1600w" sizes="100vw" width="1080" height="1440" alt="" decoding="async" fetchpriority="high"></div>
+<div class="ibg" aria-hidden="true"><picture><source media="(min-width:900px) and (min-aspect-ratio:5/4)" srcset="photos/justica-wide-1600.webp 1600w, photos/justica-wide-2400.webp 2400w" sizes="100vw"><img src="photos/justica-1080.webp" srcset="photos/justica-640.webp 640w, photos/justica-1080.webp 1080w, photos/justica-1600.webp 1600w" sizes="100vw" width="1080" height="1440" alt="" decoding="async" fetchpriority="high"></picture></div>
 <div class="stage">
 <p class="q3" id="intro-q"><span class="s s1 ok">200</span><span class="s s2 or" data-pt="OU" data-en="OR">OU</span><span class="s s3 no">403<span class="q">?</span></span></p>
 <p class="s s4 jp" data-pt="Justiça ou política?" data-en="Justice or politics?">Justiça ou política?</p>

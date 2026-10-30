@@ -139,6 +139,7 @@ figcaption{font-size:.9rem;color:var(--mut);text-align:center;margin-top:6px}
 @keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
 .intro .icredit{position:absolute;z-index:1;bottom:8px;left:0;right:0;margin:0;padding:0 12px;font-size:.66rem;line-height:1.3;color:rgba(205,215,232,.75)}
 .intro .icredit a{color:inherit}
+@media (min-width:900px) and (min-aspect-ratio:5/4){.intro .ibg{top:-1%;height:106%;--par:4}.intro .ibg img{object-position:70% 0}.intro .pin{align-items:flex-start}.intro .stage{width:50%;padding-left:4vw;padding-right:2vw}.intro .pin::after{background:linear-gradient(90deg,rgba(5,14,30,.55),rgba(5,14,30,.2) 55%,rgba(5,14,30,0) 75%),linear-gradient(180deg,rgba(5,14,30,0) 70%,#0b1f3a)}.intro .ok,.intro .no{font-size:clamp(5rem,11vw,9rem)}}
 @media (prefers-reduced-motion:reduce){.intro .cue .ic{animation:none}}
 footer{text-align:center;color:var(--mut);font-size:.9rem;padding:24px 22px 48px;border-top:1px solid var(--line)}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
@@ -150,7 +151,7 @@ footer{text-align:center;color:var(--mut);font-size:.9rem;padding:24px 22px 48px
 <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set="pt" aria-pressed="true">PT</button><button type="button" data-set="en" aria-pressed="false">EN</button></div></header>
 <section class="intro" aria-labelledby="intro-q">
 <div class="pin">
-<div class="ibg" aria-hidden="true"><img src="photos/justica-1080.webp" srcset="photos/justica-640.webp 640w, photos/justica-1080.webp 1080w, photos/justica-1600.webp 1600w" sizes="100vw" width="1080" height="1440" alt="" decoding="async" fetchpriority="high"></div>
+<div class="ibg" aria-hidden="true"><picture><source media="(min-width:900px) and (min-aspect-ratio:5/4)" srcset="photos/justica-wide-1600.webp 1600w, photos/justica-wide-2400.webp 2400w" sizes="100vw"><img src="photos/justica-1080.webp" srcset="photos/justica-640.webp 640w, photos/justica-1080.webp 1080w, photos/justica-1600.webp 1600w" sizes="100vw" width="1080" height="1440" alt="" decoding="async" fetchpriority="high"></picture></div>
 <div class="stage">
 <p class="q3" id="intro-q"><span class="s s1 ok">200</span><span class="s s2 or" data-pt="OU" data-en="OR">OU</span><span class="s s3 no">403<span class="q">?</span></span></p>
 <p class="s s4 jp" data-pt="Justiça ou política?" data-en="Justice or politics?">Justiça ou política?</p>
@@ -259,9 +260,9 @@ b.forEach(function(x){x.addEventListener('click',function(){set(x.dataset.set)})
 document.querySelectorAll('.yt .ytb').forEach(function(btn){btn.addEventListener('click',function(){var d=btn.parentNode,f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+d.dataset.id+'?autoplay=1&start='+(parseInt(d.dataset.start,10)||0);f.title=btn.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.referrerPolicy='strict-origin-when-cross-origin';d.replaceChild(f,btn);f.focus()})});
 var I=document.querySelector('.intro');
 if(I&&document.documentElement.classList.contains('anim')){
-var G=I.querySelector('.ibg'),S=I.querySelectorAll('.s'),C=I.querySelector('.cue'),T=[0,.13,.26,.4,.53,.68],st=-1,ticking=false;
+var G=I.querySelector('.ibg'),S=I.querySelectorAll('.s'),C=I.querySelector('.cue'),T=[0,.13,.26,.4,.53,.68],st=-1,ticking=false,PX=parseFloat(getComputedStyle(G).getPropertyValue('--par'))||10;
 function up(){ticking=false;var r=I.getBoundingClientRect(),tot=r.height-innerHeight,p=tot>0?Math.min(1,Math.max(0,-r.top/tot)):1;
-G.style.transform='translate3d(0,'+(-p*10).toFixed(2)+'%,0)';
+G.style.transform='translate3d(0,'+(-p*PX).toFixed(2)+'%,0)';
 var n=0;for(var i=0;i<T.length;i++)if(p>=T[i])n=i;
 if(n!==st){st=n;S.forEach(function(e,i){e.classList.toggle('on',i<=n)})}
 C.classList.toggle('off',p>.75)}
