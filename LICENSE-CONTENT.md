@@ -17,3 +17,9 @@ The texts, photos and graphics on this page are licensed under
 
 O código (estrutura HTML, template, build.py, CSS/JS) está sob a licença MIT; veja `LICENSE`.
 The code (HTML structure, template, build.py, CSS/JS) is under the MIT license; see `LICENSE`.
+
+## Uso indevido / Misuse
+
+Uso indevido de imagem ou texto, incluindo montagens e alterações, está sujeito às medidas previstas na Lei 9.610/98 (direitos autorais) e no art. 20 do Código Civil (direito de imagem).
+
+Misuse of images or text, including edits or alterations, may be subject to legal action under copyright and image-rights law.
