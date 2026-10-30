@@ -85,3 +85,10 @@ SOFTWARE.
 Os ícones de redes sociais no rodapé (X, Instagram, YouTube, TikTok, Telegram) são do [Simple Icons](https://simpleicons.org/) v16.36.0, licenciados sob CC0 1.0 (domínio público). As marcas pertencem aos respectivos titulares; seu uso aqui apenas identifica os perfis do autor e não implica endosso.
 
 The social icons in the footer are from [Simple Icons](https://simpleicons.org/) v16.36.0, licensed CC0 1.0. Trademarks belong to their respective owners; they are used only to identify the author's profiles and imply no endorsement.
+
+
+## Foto da escultura “A Justiça” / “A Justiça” sculpture photo
+
+A imagem de fundo da abertura (`photos/justica-*.webp`) e a imagem de compartilhamento (`og.jpg`) derivam de [“A Justiça Alfredo Ceschiatti Brasília Brasil”](https://commons.wikimedia.org/wiki/File:A_Justica_Alfredo_Ceschiatti_Brasilia_Brasil.jpg), foto de Morio, Wikimedia Commons, licenciada sob [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Alterações: recorte, conversão para tons de azul-marinho, gradiente e, em `og.jpg`, texto sobreposto. Por exigência do compartilhamento pela mesma licença (share-alike), essas imagens derivadas são distribuídas sob CC BY-SA 3.0, e não sob a CC BY-NC-ND 4.0 do restante do conteúdo. Escultura de Alfredo Ceschiatti (1961), em frente ao STF, Brasília.
+
+The intro background (`photos/justica-*.webp`) and the share image (`og.jpg`) are derived from the photo above by Morio (Wikimedia Commons, CC BY-SA 3.0). Changes: crop, navy toning, gradient and, in `og.jpg`, overlaid text. Under the share-alike term, these derived images are licensed CC BY-SA 3.0, not under the CC BY-NC-ND 4.0 that covers the rest of the content.

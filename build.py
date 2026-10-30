@@ -5,6 +5,7 @@ def t(tag,pt,en,cls='',raw=False):
     return f'<{tag}{a}{h} data-pt="{html.escape(pt)}" data-en="{html.escape(en)}">{pt}</{tag}>'
 # Icons: Lucide v1.65.0 (lucide-static), ISC license, https://lucide.dev
 ICON={
+'chevron-down':'<path d="m6 9 6 6 6-6"/>',
 'person':'<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
 'heart':'<path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/>',
 'scale':'<path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M7 21h10"/>',
@@ -31,10 +32,19 @@ LAUREL='''<svg class="laurel" viewBox="0 0 120 60" aria-hidden="true"><path d="M
 body=f'''
 <header class="top"><span class="brand"><span class="badge-ic" aria-hidden="true">{ic("anchor")}</span>Liberdade</span>
 <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set="pt" aria-pressed="true">PT</button><button type="button" data-set="en" aria-pressed="false">EN</button></div></header>
+<section class="intro" aria-labelledby="intro-q">
+<div class="pin">
+<div class="ibg" aria-hidden="true"><img src="photos/justica-1080.webp" srcset="photos/justica-640.webp 640w, photos/justica-1080.webp 1080w, photos/justica-1600.webp 1600w" sizes="100vw" width="1080" height="1440" alt="" decoding="async" fetchpriority="high"></div>
+<div class="stage">
+<p class="q3" id="intro-q"><span class="s s1 ok">200</span><span class="s s2 or" data-pt="OU" data-en="OR">OU</span><span class="s s3 no">403<span class="q">?</span></span></p>
+<p class="s s4 rule" data-pt="A regra tem de valer para todos." data-en="The rule must apply to everyone.">A regra tem de valer para todos.</p>
+</div>
+<p class="cue" aria-hidden="true"><span data-pt="Role para baixo" data-en="Scroll">Role para baixo</span>{ic("chevron-down")}</p>
+<p class="icredit">{t("span","Escultura “A Justiça”, de Alfredo Ceschiatti. Foto: Morio, CC BY-SA 3.0 (tonalizada)","Sculpture “A Justiça” by Alfredo Ceschiatti. Photo: Morio, CC BY-SA 3.0 (toned)")} · <a href="https://commons.wikimedia.org/wiki/File:A_Justica_Alfredo_Ceschiatti_Brasilia_Brasil.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+</div>
+</section>
 <main class="wrap">
 <section class="hero">
-<div class="badge" aria-hidden="true"><span class="ok">200</span><span class="or" data-pt="OU" data-en="OR">OU</span><span class="no">403<span class="q">?</span></span></div>
-<p class="sr" data-pt="200 OU 403?" data-en="200 OR 403?">200 OU 403?</p>
 {t("p","Status da sua consciência?","Status of your conscience?","status")}
 {DIV}
 {t("h1","Liberdade","Freedom")}
