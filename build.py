@@ -39,11 +39,15 @@ body=f'''
 {t("p","Pela lei, sem violência. Com respeito a quem serve e protege.","Through the law, without violence. With respect for those who serve and protect.","sub")}
 </section>
 
-<section>
+<section id="respeito">
 {h2("heart","Respeito a quem serve","Respect for those who serve")}
 {LAUREL}
 {t("p","Nos Estados Unidos, fui — e ainda sou — agradecido pelo meu serviço. Por estranhos, na rua, quase todos os dias.","In the United States I was, and still am, thanked for my service. By strangers, on the street, almost every day.")}
 {t("p","Aqui, vejo quem protege o país — militares, policiais, bombeiros — sem esse reconhecimento. E alguns deles, presos. Isso é terrível.","Here, I see those who protect the country — servicemembers, police officers, firefighters — without that recognition. And some of them in prison. That is terrible.")}
+{t("p","Não sou paraquedista, mas servi ao lado deles. Sei que ninguém salta de um avião, arriscando a própria vida, pelo adicional de periculosidade. Salta pelo país.","I'm not a paratrooper, but I served alongside them. I know no one jumps out of an aircraft, risking their life, for hazard pay. They jump for their country.")}
+<svg class="chute" viewBox="0 0 60 60" aria-hidden="true"><path d="M6 26C6 12 18 4 30 4s24 8 24 22M6 26c4-3 8-3 12 0 4-3 8-3 12 0 4-3 8-3 12 0 4-3 8-3 12 0M6 26l22 22M18 26l10 22M42 26l-10 22M54 26L32 48"/><circle cx="30" cy="52" r="4"/></svg>
+<blockquote class="verse">{t("p","Depois disto, ouvi a voz do Senhor, que dizia: A quem enviarei, e quem há de ir por nós? Então, disse eu: eis-me aqui, envia-me a mim.","Also I heard the voice of the Lord, saying, Whom shall I send, and who will go for us? Then said I, Here am I; send me.")}{t("cite","Isaías 6:8","Isaiah 6:8")}</blockquote>
+<blockquote class="verse">{t("p","Ninguém tem maior amor do que este: de dar alguém a sua vida pelos seus amigos.","Greater love hath no man than this, that a man lay down his life for his friends.")}{t("cite","João 15:13","John 15:13")}</blockquote>
 {t("p","Esta página não é sobre mim. É sobre liberdade, respeito e apreço por eles.","This page is not about me. It is about freedom, respect and appreciation for them.","lead")}
 <div class="pair">
 {fig("recruit-1997.webp",640,625,"1997, recruta","1997, recruit","Retrato de recruta da Marinha dos EUA, 1997","U.S. Navy recruit portrait, 1997")}
