@@ -14,6 +14,7 @@ ICON={
 'quote':'<path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>',
 'mail':'<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/>',
 'play':'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"/>',
+'scale':'<path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M7 21h10"/>',
 'anchor':'<path d="M12 6v16"/><path d="m19 13 2-1a9 9 0 0 1-18 0l2 1"/><path d="M9 11h6"/><circle cx="12" cy="4" r="2"/>',
 'handshake':'<path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/>',
 }
@@ -30,7 +31,7 @@ grid+='<li>'+t('span','Justiça que tarda é ilegal.','Justice delayed is unlawf
 TL='''<svg class="tl" viewBox="-20 0 380 110" role="img" aria-label="1997–2018"><path class="ln" d="M45 55H295"/><g class="pt"><circle cx="45" cy="55" r="7"/><circle cx="170" cy="55" r="7"/><circle cx="295" cy="55" r="7"/></g><g class="yr"><text x="45" y="33">1997</text><text x="170" y="33">2006–13</text><text x="295" y="33">2018</text></g><g class="lb"><text x="45" y="85" data-pt="Recruta" data-en="Recruit">Recruta</text><text x="170" y="85" data-pt="Iraque e Afeganistão" data-en="Iraq &amp; Afghanistan">Iraque e Afeganistão</text><text x="295" y="85" data-pt="Aposentadoria" data-en="Retirement">Aposentadoria</text></g></svg>'''
 LAUREL='''<svg class="laurel" viewBox="0 0 120 60" aria-hidden="true"><path d="M60 55C35 50 20 35 18 10M60 55C85 50 100 35 102 10"/><g class="lf"><ellipse cx="24" cy="18" rx="3" ry="7" transform="rotate(-30 24 18)"/><ellipse cx="30" cy="31" rx="3" ry="7" transform="rotate(-50 30 31)"/><ellipse cx="42" cy="43" rx="3" ry="7" transform="rotate(-70 42 43)"/><ellipse cx="96" cy="18" rx="3" ry="7" transform="rotate(30 96 18)"/><ellipse cx="90" cy="31" rx="3" ry="7" transform="rotate(50 90 31)"/><ellipse cx="78" cy="43" rx="3" ry="7" transform="rotate(70 78 43)"/></g><path d="M60 14l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z" class="st"/></svg>'''
 body=f'''
-<header class="top"><span class="brand"><span class="badge-ic" aria-hidden="true">{ic("anchor")}</span>Liberdade</span>
+<header class="top"><span class="brand"><span class="badge-ic" aria-hidden="true">{ic("scale")}</span>Liberdade</span>
 <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set="pt" aria-pressed="true">PT</button><button type="button" data-set="en" aria-pressed="false">EN</button></div></header>
 <section class="intro" aria-labelledby="intro-q">
 <div class="pin">
