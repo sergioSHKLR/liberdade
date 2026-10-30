@@ -16,6 +16,10 @@ The texts, photos and graphics on this page are licensed under
   2019 photo (`photos/cpo-2019.webp`): taken by a friend, from Sergio Schickler's personal archive, used with permission and excluded from the CC license.
 - Foto de recruta de 1997 (`photos/recruit-1997.webp`): foto oficial de recruta da Marinha dos EUA (Recruit Training Command, Great Lakes), domínio público como obra do governo dos EUA, fora da licença CC.
   1997 recruit photo (`photos/recruit-1997.webp`): official U.S. Navy recruit photo (Recruit Training Command, Great Lakes), public domain as a U.S. Government work, not covered by the CC license.
+- Imagem de fundo da abertura (`photos/justica-*`), card social (`og.jpg`) e imagens para redes sociais: adaptações (tonalizadas, com texto) da foto de Morio da escultura “A Justiça”, de Alfredo Ceschiatti, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:A_Justica_Alfredo_Ceschiatti_Brasilia_Brasil.jpg), CC BY-SA 3.0. Estas adaptações também estão sob [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), não sob CC BY-NC-ND. A escultura está em logradouro público (Lei 9.610/98, art. 48).
+  Intro background (`photos/justica-*`), social card (`og.jpg`) and social media images: adaptations (toned, with text) of Morio's photo of the sculpture “A Justiça” by Alfredo Ceschiatti, Wikimedia Commons, CC BY-SA 3.0. These adaptations are also licensed under CC BY-SA 3.0, not CC BY-NC-ND.
+- Ícones: [Lucide](https://lucide.dev) (licença ISC). Fonte: [Roboto Mono](https://github.com/googlefonts/RobotoMono), Google, [SIL Open Font License 1.1](fonts/OFL.txt).
+  Icons: Lucide (ISC license). Font: Roboto Mono, Google, SIL Open Font License 1.1 (see `fonts/OFL.txt`).
 - Versículos bíblicos: Almeida Revista e Corrigida (ARC) e King James Version (KJV), conforme indicado.
   Bible verses: Almeida Revista e Corrigida (ARC) and King James Version (KJV), as listed.
 
