@@ -19,8 +19,8 @@ def h2(n,pt,en): return f'<div class="sh">{ic(n)}{t("h2",pt,en)}</div>'
 def fig(src,w,h,pt,en,altpt,alten):
     return f'<figure><img src="photos/{src}" width="{w}" height="{h}" loading="lazy" decoding="async" data-alt-pt="{html.escape(altpt)}" data-alt-en="{html.escape(alten)}" alt="{html.escape(altpt)}">{t("figcaption",pt,en)}</figure>'
 DIV='<svg class="div" viewBox="0 0 200 20" aria-hidden="true"><path d="M0 10h80M120 10h80"/><path d="M100 3l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5z"/></svg>'
-OBJ_PT='Liberdade imediata para Bolsonaro e os militares presos.'
-OBJ_EN='Immediate freedom for Bolsonaro and the imprisoned service members.'
+OBJ_PT='Liberdade para Bolsonaro e para os militares e civis presos injustamente, por motivação política.'
+OBJ_EN='Freedom for Bolsonaro and for the service members and civilians unjustly imprisoned for political reasons.'
 slog=[('Logs não mentem.',"Logs don't lie."),('Rollback da consciência não existe.','There is no rollback for a conscience.'),('Sem ordem por escrito, sem deploy.','No written order, no deploy.'),('Não repúdio.','Non-repudiation.'),('Integridade é o melhor firewall.','Integrity is the best firewall.'),('Problema de usuário ou de sistema?','User problem or system problem?'),('Daqui a quatro anos, onde estará sua consciência?','Four years from now, where will your conscience be?'),('O silêncio também é uma escolha.','Silence is also a choice.'),('Meu juramento foi à Constituição. O seu também.','My oath was to the Constitution. So was yours.'),('Justiça sem devido processo não é justiça.','Justice without due process is not justice.')]
 grid=''.join(f'<li>{t("span",p,e)}</li>' for p,e in slog)
 grid+='<li>'+t('span','Justiça que tarda é ilegal.','Justice delayed is unlawful.')+t('small','CF, art. 5º, LXXVIII — razoável duração do processo','Brazilian Constitution, art. 5, LXXVIII — right to a reasonable duration of proceedings')+'</li>'
