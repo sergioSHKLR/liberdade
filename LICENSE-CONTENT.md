@@ -78,3 +78,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+
+## Simple Icons
+
+Os ícones de redes sociais no rodapé (X, Instagram, YouTube, TikTok, Telegram) são do [Simple Icons](https://simpleicons.org/) v16.36.0, licenciados sob CC0 1.0 (domínio público). As marcas pertencem aos respectivos titulares; seu uso aqui apenas identifica os perfis do autor e não implica endosso.
+
+The social icons in the footer are from [Simple Icons](https://simpleicons.org/) v16.36.0, licensed CC0 1.0. Trademarks belong to their respective owners; they are used only to identify the author's profiles and imply no endorsement.
