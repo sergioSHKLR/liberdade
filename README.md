@@ -13,3 +13,9 @@ Página única, estática e bilíngue (PT padrão, EN via botão) da campanha vi
 ## Publicar depois (quando aprovado)
 1. Tornar público / ativar GitHub Pages (branch `main`, raiz), domínio `liberdade.shklr.org`.
 2. Na Hover: registro `CNAME` com host `liberdade` apontando para `sergioshklr.github.io`.
+
+## Licença / License
+- Código (HTML, template, build.py, CSS/JS): MIT — ver `LICENSE`. / Code: MIT — see `LICENSE`.
+- Textos, fotos e gráficos: CC BY-NC-ND 4.0, © 2026 Sergio Schickler — ver `LICENSE-CONTENT.md`. Vídeos do YouTube e miniaturas pertencem aos seus titulares. / Text, photos and graphics: CC BY-NC-ND 4.0; YouTube videos and thumbnails belong to their owners.
+
+Página desenvolvida com auxílio de IA (Grok). / Page built with AI assistance (Grok).

@@ -119,7 +119,7 @@ body=f'''
 {t("p","Kit de imprensa: em breve.","Press kit: coming soon.","note")}
 </section>
 </main>
-<footer>{t("p","Campanha independente e virtual. Sem partido, sem financiamento.","Independent, virtual campaign. No party, no funding.")}</footer>
+<footer>{t("p","Campanha independente e virtual. Sem partido, sem financiamento.","Independent, virtual campaign. No party, no funding.")}<p class="lic"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener">{t("span","© 2026 Sergio Schickler · Textos e fotos: CC BY-NC-ND 4.0","© 2026 Sergio Schickler · Text and photos: CC BY-NC-ND 4.0")}</a></p></footer>
 '''
 tpl=open('template.html').read()
 open('index.html','w').write(tpl.replace('<!--BODY-->',body))
