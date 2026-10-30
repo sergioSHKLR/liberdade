@@ -14,6 +14,8 @@ The texts, photos and graphics on this page are licensed under
   Embedded YouTube videos and their thumbnails (`photos/video-*.webp`) belong to their respective owners (Correio Braziliense, Estadão/TV Globo) and are not covered by this license.
 - Foto de 2019 (`photos/cpo-2019.webp`): tirada por um amigo, do arquivo pessoal de Sergio Schickler, usada com permissão e excluída da licença CC.
   2019 photo (`photos/cpo-2019.webp`): taken by a friend, from Sergio Schickler's personal archive, used with permission and excluded from the CC license.
+- Foto de recruta de 1997 (`photos/recruit-1997.webp`): foto oficial de recruta da Marinha dos EUA (Recruit Training Command, Great Lakes), domínio público como obra do governo dos EUA, fora da licença CC.
+  1997 recruit photo (`photos/recruit-1997.webp`): official U.S. Navy recruit photo (Recruit Training Command, Great Lakes), public domain as a U.S. Government work, not covered by the CC license.
 - Versículos bíblicos: Almeida Revista e Corrigida (ARC) e King James Version (KJV), conforme indicado.
   Bible verses: Almeida Revista e Corrigida (ARC) and King James Version (KJV), as listed.
 
