@@ -3,18 +3,20 @@ def t(tag,pt,en,cls='',raw=False):
     a=f' class="{cls}"' if cls else ''
     h=' data-html' if raw else ''
     return f'<{tag}{a}{h} data-pt="{html.escape(pt)}" data-en="{html.escape(en)}">{pt}</{tag}>'
+# Icons: Lucide v1.65.0 (lucide-static), ISC license, https://lucide.dev
 ICON={
-'person':'<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/>',
-'heart':'<path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/>',
-'scale':'<path d="M12 3v18M5 21h14M6 7h12M6 7l-3 7h6zM18 7l-3 7h6z"/>',
-'shield':'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>',
-'terminal':'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M12 15h5"/>',
-'quote':'<path d="M7 7h4v4c0 3-2 5-4 6M14 7h4v4c0 3-2 5-4 6"/>',
-'mail':'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
-'play':'<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/>',
-'anchor':'<circle cx="12" cy="5" r="2"/><path d="M12 7v14M8 11h8M5 14c0 4 3 7 7 7s7-3 7-7"/>',
+'person':'<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+'heart':'<path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/>',
+'scale':'<path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M7 21h10"/>',
+'shield':'<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+'terminal':'<path d="m7 11 2-2-2-2"/><path d="M11 13h4"/><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>',
+'quote':'<path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>',
+'mail':'<path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/>',
+'play':'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"/>',
+'anchor':'<path d="M12 6v16"/><path d="m19 13 2-1a9 9 0 0 1-18 0l2 1"/><path d="M9 11h6"/><circle cx="12" cy="4" r="2"/>',
+'handshake':'<path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/>',
 }
-def ic(n): return f'<svg class="ic" viewBox="0 0 24 24" aria-hidden="true">{ICON[n]}</svg>'
+def ic(n,cls="ic",extra=' aria-hidden="true"'): return f'<svg class="{cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"{extra}>{ICON[n]}</svg>'
 def h2(n,pt,en): return f'<div class="sh">{ic(n)}{t("h2",pt,en)}</div>'
 def fig(src,w,h,pt,en,altpt,alten):
     return f'<figure><img src="photos/{src}" width="{w}" height="{h}" loading="lazy" decoding="async" data-alt-pt="{html.escape(altpt)}" data-alt-en="{html.escape(alten)}" alt="{html.escape(altpt)}">{t("figcaption",pt,en)}</figure>'
@@ -25,7 +27,6 @@ slog=[('Logs não mentem.',"Logs don't lie."),('Rollback da consciência não ex
 grid=''.join(f'<li>{t("span",p,e)}</li>' for p,e in slog)
 grid+='<li>'+t('span','Justiça que tarda é ilegal.','Justice delayed is unlawful.')+t('small','CF, art. 5º, LXXVIII — razoável duração do processo','Brazilian Constitution, art. 5, LXXVIII — right to a reasonable duration of proceedings')+'</li>'
 TL='''<svg class="tl" viewBox="0 0 340 110" role="img" aria-label="1997–2018"><path class="ln" d="M45 55H295"/><g class="pt"><circle cx="45" cy="55" r="7"/><circle cx="170" cy="55" r="7"/><circle cx="295" cy="55" r="7"/></g><g class="yr"><text x="45" y="33">1997</text><text x="170" y="33">2008–12</text><text x="295" y="33">2018</text></g><g class="lb"><text x="45" y="85" data-pt="Recruta" data-en="Recruit">Recruta</text><text x="170" y="85" data-pt="Missões" data-en="Deployments">Missões</text><text x="295" y="85" data-pt="Reserva" data-en="Retired">Reserva</text></g></svg>'''
-HAND='<svg class="hand" viewBox="0 0 120 60" role="img" aria-label="Aperto de mãos" data-label-pt="Aperto de mãos" data-label-en="Handshake"><path d="M4 22h18l10-6h14l8 5"/><path d="M116 22H98l-12-6H70l-16 10c-3 2-1 6 3 5l12-5"/><path d="M22 22l8 18c2 3 5 4 8 3l20 0c3 0 5-2 4-5"/><path d="M98 22l-6 16c-1 3-4 4-7 3"/><path d="M85 41l-4 4c-2 2-5 2-7 0M74 45l-3 3c-2 2-5 2-7 0M64 48l-2 2c-2 2-5 2-7 0l-4-4"/><path d="M4 22v20h18M116 22v20H98"/></svg>'
 LAUREL='''<svg class="laurel" viewBox="0 0 120 60" aria-hidden="true"><path d="M60 55C35 50 20 35 18 10M60 55C85 50 100 35 102 10"/><g class="lf"><ellipse cx="24" cy="18" rx="3" ry="7" transform="rotate(-30 24 18)"/><ellipse cx="30" cy="31" rx="3" ry="7" transform="rotate(-50 30 31)"/><ellipse cx="42" cy="43" rx="3" ry="7" transform="rotate(-70 42 43)"/><ellipse cx="96" cy="18" rx="3" ry="7" transform="rotate(30 96 18)"/><ellipse cx="90" cy="31" rx="3" ry="7" transform="rotate(50 90 31)"/><ellipse cx="78" cy="43" rx="3" ry="7" transform="rotate(70 78 43)"/></g><path d="M60 14l3 7h7l-6 4 2 7-6-4-6 4 2-7-6-4h7z" class="st"/></svg>'''
 body=f'''
 <header class="top"><span class="brand">{ic("anchor")}Liberdade</span>
@@ -43,7 +44,7 @@ body=f'''
 
 <section id="respeito">
 {h2("heart","Respeito a quem serve","Respect for those who serve")}
-{HAND}
+{ic("handshake","hand",' role="img" aria-label="Aperto de mãos" data-label-pt="Aperto de mãos" data-label-en="Handshake"')}
 {t("p","Nos Estados Unidos, fui — e ainda sou — agradecido pelo meu serviço. Por estranhos, na rua, quase todos os dias.","In the United States, I was, and still am, thanked for my service. By strangers, on the street, almost every day.")}
 {t("p","Aqui, vejo quem protege o país — militares, policiais, bombeiros — sem esse reconhecimento. E alguns deles, presos. Isso é terrível.","Here, I see those who protect the country — service members, police officers, firefighters — without that recognition. And some of them in prison. That is terrible.")}
 {t("p","Não sou paraquedista, mas servi ao lado deles. Sei que ninguém salta de um avião, arriscando a própria vida, pelo adicional de periculosidade. Salta pelo país.","I'm not a paratrooper, but I served alongside them. I know no one jumps out of an aircraft, risking their life, for hazard pay. They jump for their country.")}
