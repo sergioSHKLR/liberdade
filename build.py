@@ -18,9 +18,9 @@ def h2(n,pt,en): return f'<div class="sh">{ic(n)}{t("h2",pt,en)}</div>'
 def fig(src,w,h,pt,en,altpt,alten):
     return f'<figure><img src="photos/{src}" width="{w}" height="{h}" loading="lazy" decoding="async" data-alt-pt="{html.escape(altpt)}" data-alt-en="{html.escape(alten)}" alt="{html.escape(altpt)}">{t("figcaption",pt,en)}</figure>'
 DIV='<svg class="div" viewBox="0 0 200 20" aria-hidden="true"><path d="M0 10h80M120 10h80"/><path d="M100 3l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5z"/></svg>'
-OBJ_PT='Liberdade imediata para Bolsonaro e os militares presos, e aplicação já da dosimetria aprovada para os demais.'
-OBJ_EN='Immediate freedom for Bolsonaro and the imprisoned servicemembers, and immediate application of the already-approved sentencing reduction (dosimetria) for the others.'
-slog=[('Logs não mentem.',"Logs don't lie."),('Rollback da consciência não existe.','There is no rollback for a conscience.'),('Sem ordem por escrito, sem deploy.','No written order, no deploy.'),('Não repúdio.','Non-repudiation.'),('Integridade é o melhor firewall.','Integrity is the best firewall.'),('Problema de usuário ou de sistema?','User problem or system problem?'),('Daqui a 4 anos, onde estará sua consciência?','Four years from now, where will your conscience be?'),('O silêncio também é uma escolha.','Silence is also a choice.'),('Meu juramento foi à Constituição. O seu também.','My oath was to the Constitution. So was yours.'),('Justiça sem devido processo não é justiça.','Justice without due process is not justice.')]
+OBJ_PT='Liberdade imediata para Bolsonaro e os militares presos, e aplicação imediata da dosimetria aprovada para os demais.'
+OBJ_EN='Immediate freedom for Bolsonaro and the imprisoned service members, and immediate application of the approved sentencing reduction (dosimetria) for the others.'
+slog=[('Logs não mentem.',"Logs don't lie."),('Rollback da consciência não existe.','There is no rollback for a conscience.'),('Sem ordem por escrito, sem deploy.','No written order, no deploy.'),('Não repúdio.','Non-repudiation.'),('Integridade é o melhor firewall.','Integrity is the best firewall.'),('Problema de usuário ou de sistema?','User problem or system problem?'),('Daqui a quatro anos, onde estará sua consciência?','Four years from now, where will your conscience be?'),('O silêncio também é uma escolha.','Silence is also a choice.'),('Meu juramento foi à Constituição. O seu também.','My oath was to the Constitution. So was yours.'),('Justiça sem devido processo não é justiça.','Justice without due process is not justice.')]
 grid=''.join(f'<li>{t("span",p,e)}</li>' for p,e in slog)
 grid+='<li>'+t('span','Justiça que tarda é ilegal.','Justice delayed is unlawful.')+t('small','CF, art. 5º, LXXVIII — razoável duração do processo','Brazilian Constitution, art. 5, LXXVIII — right to a reasonable duration of proceedings')+'</li>'
 TL='''<svg class="tl" viewBox="0 0 340 110" role="img" aria-label="1997–2018"><path class="ln" d="M45 55H295"/><g class="pt"><circle cx="45" cy="55" r="7"/><circle cx="170" cy="55" r="7"/><circle cx="295" cy="55" r="7"/></g><g class="yr"><text x="45" y="33">1997</text><text x="170" y="33">2008–12</text><text x="295" y="33">2018</text></g><g class="lb"><text x="45" y="85" data-pt="Recruta" data-en="Recruit">Recruta</text><text x="170" y="85" data-pt="Missões" data-en="Deployments">Missões</text><text x="295" y="85" data-pt="Reserva" data-en="Retired">Reserva</text></g></svg>'''
@@ -32,7 +32,7 @@ body=f'''
 <section class="hero">
 <div class="badge" aria-hidden="true"><span class="ok">200</span><span class="or" data-pt="OU" data-en="OR">OU</span><span class="no">403?</span></div>
 <p class="sr" data-pt="200 OU 403?" data-en="200 OR 403?">200 OU 403?</p>
-{t("p","Status da sua consciência?","Your conscience's status?","status")}
+{t("p","Status da sua consciência?","Status of your conscience?","status")}
 {DIV}
 {t("h1","Liberdade","Freedom")}
 {t("p",OBJ_PT,OBJ_EN,"obj")}
@@ -42,8 +42,8 @@ body=f'''
 <section id="respeito">
 {h2("heart","Respeito a quem serve","Respect for those who serve")}
 {LAUREL}
-{t("p","Nos Estados Unidos, fui — e ainda sou — agradecido pelo meu serviço. Por estranhos, na rua, quase todos os dias.","In the United States I was, and still am, thanked for my service. By strangers, on the street, almost every day.")}
-{t("p","Aqui, vejo quem protege o país — militares, policiais, bombeiros — sem esse reconhecimento. E alguns deles, presos. Isso é terrível.","Here, I see those who protect the country — servicemembers, police officers, firefighters — without that recognition. And some of them in prison. That is terrible.")}
+{t("p","Nos Estados Unidos, fui — e ainda sou — agradecido pelo meu serviço. Por estranhos, na rua, quase todos os dias.","In the United States, I was, and still am, thanked for my service. By strangers, on the street, almost every day.")}
+{t("p","Aqui, vejo quem protege o país — militares, policiais, bombeiros — sem esse reconhecimento. E alguns deles, presos. Isso é terrível.","Here, I see those who protect the country — service members, police officers, firefighters — without that recognition. And some of them in prison. That is terrible.")}
 {t("p","Não sou paraquedista, mas servi ao lado deles. Sei que ninguém salta de um avião, arriscando a própria vida, pelo adicional de periculosidade. Salta pelo país.","I'm not a paratrooper, but I served alongside them. I know no one jumps out of an aircraft, risking their life, for hazard pay. They jump for their country.")}
 <svg class="chute" viewBox="0 0 60 60" aria-hidden="true"><path d="M6 26C6 12 18 4 30 4s24 8 24 22M6 26c4-3 8-3 12 0 4-3 8-3 12 0 4-3 8-3 12 0 4-3 8-3 12 0M6 26l22 22M18 26l10 22M42 26l-10 22M54 26L32 48"/><circle cx="30" cy="52" r="4"/></svg>
 <blockquote class="verse">{t("p","Depois disto, ouvi a voz do Senhor, que dizia: A quem enviarei, e quem há de ir por nós? Então, disse eu: eis-me aqui, envia-me a mim.","Also I heard the voice of the Lord, saying, Whom shall I send, and who will go for us? Then said I, Here am I; send me.")}{t("cite","Isaías 6:8","Isaiah 6:8")}</blockquote>
@@ -60,7 +60,7 @@ body=f'''
 {h2("person","Quem sou","Who I am")}
 {t("p","Sergio Schickler, Chief Petty Officer (ETC) da Marinha dos EUA, na reserva. Fui técnico de comunicações em apoio à guerra especial naval, no Iraque e no Afeganistão. Brasileiro e americano.","Sergio Schickler, retired U.S. Navy Chief Petty Officer (ETC). I was a communications technician supporting naval special warfare, in Iraq and Afghanistan. Brazilian and American.")}
 {TL}
-{t("p","Servi sob 4 presidentes, de dois partidos. Jurei lealdade à Constituição, não a um governante.","I served under 4 presidents, from two parties. I swore loyalty to the Constitution, not to a ruler.","quote")}
+{t("p","Servi sob quatro presidentes, de dois partidos. Jurei lealdade à Constituição, não a um governante.","I served under four presidents, from two parties. I swore loyalty to the Constitution, not to a ruler.","quote")}
 <div class="pair">
 {fig("headset-2008.webp",900,674,"2008, comunicações","2008, communications","No rádio, de capacete e headset, 2008","On the radio in helmet and headset, 2008")}
 {fig("cpo-2019.webp",900,601,"2019, cerimônia de Chief","2019, Chief ceremony","De uniforme de gala diante das bandeiras, cerimônia de Chief, 2019","In dress uniform before the flags at a Chief ceremony, 2019")}
@@ -72,11 +72,11 @@ body=f'''
 {h2("scale","O que peço","What I ask")}
 {t("p",OBJ_PT,OBJ_EN,"lead")}
 <ul class="list">
-{t("li","Devido processo legal, com amplo direito de defesa e juízes imparciais.","Due process, with full right of defense and impartial judges.")}
+{t("li","Devido processo legal, com amplo direito de defesa e juízes imparciais.","Due process, with the full right to a defense and impartial judges.")}
 {t("li","Proporcionalidade: prisão domiciliar para maiores de 70 anos com problemas de saúde, como a lei já prevê.","Proportionality: house arrest for people over 70 with health problems, as the law already provides.")}
 {t("li","Fiscalização institucional: freios e contrapesos que valham para todos os Poderes.","Institutional oversight: checks and balances that apply to every branch.")}
 </ul>
-{t("p","Tudo isso pelos meios legais e sem violência. Não apoio nenhum ato ilegal, nem agressão a ninguém.","All of this through legal means and without violence. I support no illegal act and no aggression against anyone.")}
+{t("p","Tudo isso pelos meios legais e sem violência. Não apoio nenhum ato ilegal nem agressão a quem quer que seja.","All of this through legal means and without violence. I support no illegal act and no aggression against anyone.")}
 {t("p","Quem fiscaliza quem julga?","Who oversees those who judge?","ask")}
 </section>
 
