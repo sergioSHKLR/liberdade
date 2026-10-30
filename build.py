@@ -31,7 +31,7 @@ body=f'''
 <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set="pt" aria-pressed="true">PT</button><button type="button" data-set="en" aria-pressed="false">EN</button></div></header>
 <main class="wrap">
 <section class="hero">
-<div class="badge" aria-hidden="true"><span class="ok">200</span><span class="or" data-pt="OU" data-en="OR">OU</span><span class="no">403?</span></div>
+<div class="badge" aria-hidden="true"><span class="ok">200</span><span class="or" data-pt="OU" data-en="OR">OU</span><span class="no">403<span class="q">?</span></span></div>
 <p class="sr" data-pt="200 OU 403?" data-en="200 OR 403?">200 OU 403?</p>
 {t("p","Status da sua consciência?","Status of your conscience?","status")}
 {DIV}
