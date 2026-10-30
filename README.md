@@ -19,3 +19,8 @@ Página única, estática e bilíngue (PT padrão, EN via botão) da campanha vi
 - Textos, fotos e gráficos: CC BY-NC-ND 4.0, © 2026 Sergio Schickler — ver `LICENSE-CONTENT.md`. Vídeos do YouTube e miniaturas pertencem aos seus titulares. / Text, photos and graphics: CC BY-NC-ND 4.0; YouTube videos and thumbnails belong to their owners.
 
 Página desenvolvida com auxílio de IA (Grok). / Page built with AI assistance (Grok).
+
+## Aviso / Disclaimer
+As fotos de uniforme são do período de serviço ativo (1997–2018), exceto a de 2025, tirada já na reserva, no Memorial Day, ocasião em que o uso é permitido a aposentados. Esta página expressa apenas opiniões pessoais e não representa nem tem endosso da Marinha dos EUA, do Departamento de Defesa ou do governo dos EUA.
+
+Photos in uniform are from my active service (1997–2018), except the 2025 photo, taken as a retiree on Memorial Day, when retirees are permitted to wear it. This page reflects personal views only and is not endorsed by the U.S. Navy, the Department of Defense, or the U.S. Government.
