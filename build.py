@@ -38,8 +38,9 @@ body=f'''
 <div class="ibg" aria-hidden="true"><img src="photos/justica-1080.webp" srcset="photos/justica-640.webp 640w, photos/justica-1080.webp 1080w, photos/justica-1600.webp 1600w" sizes="100vw" width="1080" height="1440" alt="" decoding="async" fetchpriority="high"></div>
 <div class="stage">
 <p class="q3" id="intro-q"><span class="s s1 ok">200</span><span class="s s2 or" data-pt="OU" data-en="OR">OU</span><span class="s s3 no">403<span class="q">?</span></span></p>
-<div class="s s4 legend">{t("p","200 OK: acesso permitido.","200 OK: access granted.","lg1")}{t("p","403 Forbidden: acesso negado.","403 Forbidden: access denied.","lg1")}{t("p","Na internet, respostas de um servidor. Aqui, uma pergunta:","Online, a server’s replies. Here, a question:","lg2")}</div>
-<p class="s s5 rule" data-pt="A regra tem de valer para todos." data-en="The rule must apply to everyone.">A regra tem de valer para todos.</p>
+<p class="s s4 jp" data-pt="Justiça ou política?" data-en="Justice or politics?">Justiça ou política?</p>
+<div class="s s5 legend">{t("p","200 OK: acesso permitido.","200 OK: access granted.","lg1")}{t("p","403 Forbidden: acesso negado.","403 Forbidden: access denied.","lg1")}</div>
+<p class="s s6 rule" data-pt="A regra tem de valer para todos." data-en="The rule must apply to everyone.">A regra tem de valer para todos.</p>
 </div>
 <p class="cue" aria-hidden="true"><span data-pt="Role para baixo" data-en="Scroll">Role para baixo</span>{ic("chevron-down")}</p>
 <p class="icredit">{t("span","Escultura “A Justiça”, de Alfredo Ceschiatti. Foto: Morio, CC BY-SA 3.0 (tonalizada)","Sculpture “A Justiça” by Alfredo Ceschiatti. Photo: Morio, CC BY-SA 3.0 (toned)")} · <a href="https://commons.wikimedia.org/wiki/File:A_Justica_Alfredo_Ceschiatti_Brasilia_Brasil.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
