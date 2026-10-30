@@ -11,6 +11,7 @@ ICON={
 'terminal':'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M12 15h5"/>',
 'quote':'<path d="M7 7h4v4c0 3-2 5-4 6M14 7h4v4c0 3-2 5-4 6"/>',
 'mail':'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+'play':'<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/>',
 'anchor':'<circle cx="12" cy="5" r="2"/><path d="M12 7v14M8 11h8M5 14c0 4 3 7 7 7s7-3 7-7"/>',
 }
 def ic(n): return f'<svg class="ic" viewBox="0 0 24 24" aria-hidden="true">{ICON[n]}</svg>'
@@ -79,6 +80,14 @@ body=f'''
 </ul>
 {t("p","Tudo isso pelos meios legais e sem violência. Não apoio nenhum ato ilegal nem agressão a quem quer que seja.","All of this through legal means and without violence. I support no illegal act and no aggression against anyone.")}
 {t("p","Quem fiscaliza quem julga?","Who oversees those who judge?","ask")}
+</section>
+
+<section id="palavras">
+{h2("play","Nas palavras dele","In his own words")}
+<div class="yt" data-id="AkvPuvjwfdA"><button type="button" class="ytb" data-label-pt="Reproduzir vídeo: Em SC, Lula diz que quer ganhar as eleições para manter Jair Bolsonaro preso (carrega o YouTube)" data-label-en="Play video: Em SC, Lula diz que quer ganhar as eleições para manter Jair Bolsonaro preso (loads YouTube)" aria-label="Reproduzir vídeo: Em SC, Lula diz que quer ganhar as eleições para manter Jair Bolsonaro preso (carrega o YouTube)"><img src="photos/video-AkvPuvjwfdA.webp" width="480" height="270" alt="" loading="lazy" decoding="async"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7A8.6 8.6 0 0 0 60.5 1.6C55.2.2 34 .2 34 .2S12.8.2 7.5 1.6a8.6 8.6 0 0 0-6 6.1C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.6 8.6 0 0 0 6 6.1C12.8 47.8 34 47.8 34 47.8s21.2 0 26.5-1.4a8.6 8.6 0 0 0 6-6.1C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#c4302b"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></button></div>
+{t("p","Fonte: Correio Braziliense, YouTube. “Em SC, Lula diz que quer ganhar as eleições para manter Jair Bolsonaro preso”","Source: Correio Braziliense, YouTube. “Em SC, Lula diz que quer ganhar as eleições para manter Jair Bolsonaro preso” (“In Santa Catarina, Lula says he wants to win the elections to keep Jair Bolsonaro in prison”)","note")}
+{t("p","Prisão é decisão da Justiça. Por que depende da eleição?","Imprisonment is a decision for the courts. Why does it depend on an election?","ask")}
+<!-- TODO: second embed (Jornal Nacional), pending original source. Same .yt facade pattern. -->
 </section>
 
 <section>

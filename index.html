@@ -62,6 +62,11 @@ figcaption{font-size:.9rem;color:var(--mut);text-align:center;margin-top:6px}
 .verse{margin:16px 0;padding:18px 20px;background:var(--navy2);border:1px solid var(--line);border-radius:12px;text-align:center}
 .verse p{margin:0;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.12rem}
 .verse cite{display:block;margin-top:10px;color:var(--gold);font-style:normal;font-size:.9rem;letter-spacing:.08em}
+.yt{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#000}
+.yt iframe,.ytb{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ytb{padding:0;background:none;cursor:pointer}
+.ytb img{width:100%;height:100%;object-fit:cover;display:block}
+.ytb svg{position:absolute;left:50%;top:50%;width:68px;height:48px;transform:translate(-50%,-50%)}
 footer{text-align:center;color:var(--mut);font-size:.9rem;padding:24px 22px 48px;border-top:1px solid var(--line)}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
@@ -123,6 +128,14 @@ footer{text-align:center;color:var(--mut);font-size:.9rem;padding:24px 22px 48px
 <p class="ask" data-pt="Quem fiscaliza quem julga?" data-en="Who oversees those who judge?">Quem fiscaliza quem julga?</p>
 </section>
 
+<section id="palavras">
+<div class="sh"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg><h2 data-pt="Nas palavras dele" data-en="In his own words">Nas palavras dele</h2></div>
+<div class="yt" data-id="AkvPuvjwfdA"><button type="button" class="ytb" data-label-pt="Reproduzir vídeo: Em SC, Lula diz que quer ganhar as eleições para manter Jair Bolsonaro preso (carrega o YouTube)" data-label-en="Play video: Em SC, Lula diz que quer ganhar as eleições para manter Jair Bolsonaro preso (loads YouTube)" aria-label="Reproduzir vídeo: Em SC, Lula diz que quer ganhar as eleições para manter Jair Bolsonaro preso (carrega o YouTube)"><img src="photos/video-AkvPuvjwfdA.webp" width="480" height="270" alt="" loading="lazy" decoding="async"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7A8.6 8.6 0 0 0 60.5 1.6C55.2.2 34 .2 34 .2S12.8.2 7.5 1.6a8.6 8.6 0 0 0-6 6.1C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.6 8.6 0 0 0 6 6.1C12.8 47.8 34 47.8 34 47.8s21.2 0 26.5-1.4a8.6 8.6 0 0 0 6-6.1C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#c4302b"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></button></div>
+<p class="note" data-pt="Fonte: Correio Braziliense, YouTube. “Em SC, Lula diz que quer ganhar as eleições para manter Jair Bolsonaro preso”" data-en="Source: Correio Braziliense, YouTube. “Em SC, Lula diz que quer ganhar as eleições para manter Jair Bolsonaro preso” (“In Santa Catarina, Lula says he wants to win the elections to keep Jair Bolsonaro in prison”)">Fonte: Correio Braziliense, YouTube. “Em SC, Lula diz que quer ganhar as eleições para manter Jair Bolsonaro preso”</p>
+<p class="ask" data-pt="Prisão é decisão da Justiça. Por que depende da eleição?" data-en="Imprisonment is a decision for the courts. Why does it depend on an election?">Prisão é decisão da Justiça. Por que depende da eleição?</p>
+<!-- TODO: second embed (Jornal Nacional), pending original source. Same .yt facade pattern. -->
+</section>
+
 <section>
 <div class="sh"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg><h2 data-pt="Declaração" data-en="Statement">Declaração</h2></div>
 <p class="lead" data-pt="Sem partido. Sem cargo. Sem dinheiro. Sem interesse pessoal." data-en="No party. No office. No money. No personal interest.">Sem partido. Sem cargo. Sem dinheiro. Sem interesse pessoal.</p>
@@ -157,10 +170,12 @@ function set(l){
 document.documentElement.lang=l==='en'?'en':'pt-BR';
 document.querySelectorAll('[data-pt]').forEach(function(e){var t=e.getAttribute('data-'+l);if(e.hasAttribute('data-html'))e.innerHTML=t;else e.textContent=t});
 document.querySelectorAll('[data-alt-pt]').forEach(function(e){e.alt=e.getAttribute('data-alt-'+l)});
+document.querySelectorAll('[data-label-pt]').forEach(function(e){e.setAttribute('aria-label',e.getAttribute('data-label-'+l))});
 document.title=l==='en'?'Freedom':'Liberdade';
 b.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.set===l)});
 try{localStorage.setItem('lang',l)}catch(e){}}
 b.forEach(function(x){x.addEventListener('click',function(){set(x.dataset.set)})});
+document.querySelectorAll('.yt .ytb').forEach(function(btn){btn.addEventListener('click',function(){var d=btn.parentNode,f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+d.dataset.id+'?autoplay=1';f.title=btn.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.referrerPolicy='strict-origin-when-cross-origin';d.replaceChild(f,btn);f.focus()})});
 var s=null;try{s=localStorage.getItem('lang')}catch(e){}
 if(s==='en'||(!s&&location.hash==='#en'))set('en');
 })();

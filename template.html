@@ -62,6 +62,11 @@ figcaption{font-size:.9rem;color:var(--mut);text-align:center;margin-top:6px}
 .verse{margin:16px 0;padding:18px 20px;background:var(--navy2);border:1px solid var(--line);border-radius:12px;text-align:center}
 .verse p{margin:0;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.12rem}
 .verse cite{display:block;margin-top:10px;color:var(--gold);font-style:normal;font-size:.9rem;letter-spacing:.08em}
+.yt{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#000}
+.yt iframe,.ytb{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ytb{padding:0;background:none;cursor:pointer}
+.ytb img{width:100%;height:100%;object-fit:cover;display:block}
+.ytb svg{position:absolute;left:50%;top:50%;width:68px;height:48px;transform:translate(-50%,-50%)}
 footer{text-align:center;color:var(--mut);font-size:.9rem;padding:24px 22px 48px;border-top:1px solid var(--line)}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
@@ -75,10 +80,12 @@ function set(l){
 document.documentElement.lang=l==='en'?'en':'pt-BR';
 document.querySelectorAll('[data-pt]').forEach(function(e){var t=e.getAttribute('data-'+l);if(e.hasAttribute('data-html'))e.innerHTML=t;else e.textContent=t});
 document.querySelectorAll('[data-alt-pt]').forEach(function(e){e.alt=e.getAttribute('data-alt-'+l)});
+document.querySelectorAll('[data-label-pt]').forEach(function(e){e.setAttribute('aria-label',e.getAttribute('data-label-'+l))});
 document.title=l==='en'?'Freedom':'Liberdade';
 b.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.set===l)});
 try{localStorage.setItem('lang',l)}catch(e){}}
 b.forEach(function(x){x.addEventListener('click',function(){set(x.dataset.set)})});
+document.querySelectorAll('.yt .ytb').forEach(function(btn){btn.addEventListener('click',function(){var d=btn.parentNode,f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+d.dataset.id+'?autoplay=1';f.title=btn.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.referrerPolicy='strict-origin-when-cross-origin';d.replaceChild(f,btn);f.focus()})});
 var s=null;try{s=localStorage.getItem('lang')}catch(e){}
 if(s==='en'||(!s&&location.hash==='#en'))set('en');
 })();
