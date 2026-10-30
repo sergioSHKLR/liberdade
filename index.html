@@ -14,8 +14,9 @@ a{color:var(--gold);text-underline-offset:3px}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .wrap{max-width:640px;margin:0 auto;padding:0 22px}
 .top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:var(--gold);color:var(--navy);border-bottom:1px solid #b8963f}
-.top .lang{border-color:var(--navy)}.top .lang button{color:var(--navy)}.top .lang button[aria-pressed=true]{background:var(--navy);color:var(--gold)}.top .brand .ic{stroke:var(--navy)}
-.brand{display:flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem}
+.top .lang{border-color:var(--navy)}.top .lang button{color:var(--navy)}.top .lang button[aria-pressed=true]{background:var(--navy);color:var(--gold)}.top .brand .ic{stroke:var(--gold)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:1.15rem;line-height:1}
+.brand .badge-ic{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--navy);flex:none}
 .lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
 .lang button{min-width:56px;min-height:44px;background:none;color:var(--txt);border:0;font:inherit;font-size:.95rem;font-weight:600;cursor:pointer}
 .lang button[aria-pressed=true]{background:var(--txt);color:var(--navy)}
@@ -78,7 +79,7 @@ footer{text-align:center;color:var(--mut);font-size:.9rem;padding:24px 22px 48px
 </head>
 <body>
 
-<header class="top"><span class="brand"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v16"/><path d="m19 13 2-1a9 9 0 0 1-18 0l2 1"/><path d="M9 11h6"/><circle cx="12" cy="4" r="2"/></svg>Liberdade</span>
+<header class="top"><span class="brand"><span class="badge-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v16"/><path d="m19 13 2-1a9 9 0 0 1-18 0l2 1"/><path d="M9 11h6"/><circle cx="12" cy="4" r="2"/></svg></span>Liberdade</span>
 <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set="pt" aria-pressed="true">PT</button><button type="button" data-set="en" aria-pressed="false">EN</button></div></header>
 <main class="wrap">
 <section class="hero">
