@@ -1,4 +1,8 @@
-# liberdade
+# LIBERDADE
+
+<img src="brand-kit/liberdade/icons/tile-light.svg" width="48" height="48" alt="LIBERDADE">
+
+Live: https://liberdade.shklr.org/ · Brand: [brand-kit/](brand-kit/README.md) (SHKLR brand kit, final 19 Nov 2026).
 
 Página única, estática e bilíngue (PT padrão, EN via botão) da campanha virtual "Liberdade".
 
