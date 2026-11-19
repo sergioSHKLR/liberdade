@@ -1,6 +1,6 @@
-# LIBERDADE
+<p align="center" data-brand-icon><img src="brand-kit/liberdade/icons/tile-light.svg" alt="LIBERDADE" width="128" height="128"></p>
 
-<img src="brand-kit/liberdade/icons/tile-light.svg" width="48" height="48" alt="LIBERDADE">
+# LIBERDADE
 
 Live: https://liberdade.shklr.org/ · Brand: [brand-kit/](brand-kit/README.md) (SHKLR brand kit, final 19 Nov 2026).
 
