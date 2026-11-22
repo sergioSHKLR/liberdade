@@ -18,8 +18,8 @@ The texts, photos and graphics on this page are licensed under
   1997 recruit photo (`photos/recruit-1997.webp`): official U.S. Navy recruit photo (Recruit Training Command, Great Lakes), public domain as a U.S. Government work, not covered by the CC license.
 - Imagem de fundo da abertura (`photos/justica-*`), card social (`og.jpg`) e imagens para redes sociais: adaptações (tonalizadas, com texto) da foto de Morio da escultura “A Justiça”, de Alfredo Ceschiatti, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:A_Justica_Alfredo_Ceschiatti_Brasilia_Brasil.jpg), CC BY-SA 3.0. Estas adaptações também estão sob [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), não sob CC BY-NC-ND. A escultura está em logradouro público (Lei 9.610/98, art. 48).
   Intro background (`photos/justica-*`), social card (`og.jpg`) and social media images: adaptations (toned, with text) of Morio's photo of the sculpture “A Justiça” by Alfredo Ceschiatti, Wikimedia Commons, CC BY-SA 3.0. These adaptations are also licensed under CC BY-SA 3.0, not CC BY-NC-ND.
-- Ícones: [Lucide](https://lucide.dev) (licença ISC). Fonte: [Roboto Mono](https://github.com/googlefonts/RobotoMono), Google, [SIL Open Font License 1.1](fonts/OFL.txt).
-  Icons: Lucide (ISC license). Font: Roboto Mono, Google, SIL Open Font License 1.1 (see `fonts/OFL.txt`).
+- Ícones: [Lucide](https://lucide.dev) (licença ISC). Fonte: [Martian Mono](https://github.com/evilmartians/mono) (Evil Martians), [SIL Open Font License 1.1](fonts/OFL-MartianMono.txt).
+  Icons: Lucide (ISC license). Font: Martian Mono (Evil Martians), SIL Open Font License 1.1 (see `fonts/OFL-MartianMono.txt`).
 - Versículos bíblicos: Almeida Revista e Corrigida (ARC) e King James Version (KJV), conforme indicado.
   Bible verses: Almeida Revista e Corrigida (ARC) and King James Version (KJV), as listed.
 
@@ -99,6 +99,6 @@ The intro background (`photos/justica-*.webp`) and the share image (`og.jpg`) ar
 
 ## Fonte / Font: Roboto Mono
 
-PT: O texto "200 / OU / 403?" e a legenda da introdução usam Roboto Mono (Google, Christian Robertson), auto-hospedada em `fonts/roboto-mono-700.woff2` (peso 700, subconjunto Latin). Licença: SIL Open Font License 1.1 — https://openfontlicense.org. É a mesma fonte dos vídeos e artes de divulgação, com o zero cortado.
+PT: O selo LIBERDADE e o texto "200 / OU / 403?" usam Martian Mono (Evil Martians), largura condensada, auto-hospedada em `fonts/MartianMono-Condensed[wght].woff2`. Licença: SIL Open Font License 1.1 — https://openfontlicense.org (`fonts/OFL-MartianMono.txt`). O restante da interface usa as fontes do sistema.
 
-EN: The intro's "200 / OR / 403?" and legend use Roboto Mono (Google, Christian Robertson), self-hosted at `fonts/roboto-mono-700.woff2` (weight 700, Latin subset). License: SIL Open Font License 1.1 — https://openfontlicense.org. Same font as the promo videos and graphics, with a slashed zero.
+EN: The LIBERDADE badge and the intro's "200 / OR / 403?" use Martian Mono (Evil Martians), condensed width, self-hosted at `fonts/MartianMono-Condensed[wght].woff2`. License: SIL Open Font License 1.1 — https://openfontlicense.org (`fonts/OFL-MartianMono.txt`). The rest of the interface uses system fonts.

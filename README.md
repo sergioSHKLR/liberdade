@@ -2,7 +2,7 @@
 
 # LIBERDADE
 
-Live: https://liberdade.shklr.org/ · Brand: [brand-kit/](brand-kit/README.md) (SHKLR brand kit, final 19 Nov 2026).
+Live: https://liberdade.shklr.org/ · Brand: [brand-kit/](brand-kit/README.md) (SHKLR brand kit, rev 4, 22 Nov 2026).
 
 Página única, estática e bilíngue (PT padrão, EN via botão) da campanha virtual "Liberdade".
 
